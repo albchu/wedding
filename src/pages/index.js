@@ -1,18 +1,22 @@
 import React from "react"
 
-import Image from "../components/image"
+import Logo from "../components/Logo"
 import SEO from "../components/seo"
+import "./index.css"
+import Background from "../components/Background"
 
-const IndexPage = () => (
-  <div>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+const Index = () => (
+  <Background>
+    <div className="Index_container">
+      <SEO title="Home" />
+      <div className="Index_logoContainer">
+        <Logo />
+      </div>
+      <h1>Vicky and Albert</h1>
+      <h1>July 25, 2020</h1>
+      <p>Rest of the site coming soon</p>
     </div>
-  </div>
+  </Background>
 )
 
-export default IndexPage
+export default Index
