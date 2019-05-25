@@ -19,7 +19,7 @@ const BackgroundSection = ({ className, children }) => (
           relativePath: { eq: "ivory-off-white-paper-brightened.jpg" }
         ) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 4160) {
+            fluid(quality: 90, maxWidth: 2000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -30,21 +30,7 @@ const BackgroundSection = ({ className, children }) => (
       // Extract imageData.
       const imageData = data.desktop.childImageSharp.fluid
       return (
-        <BackgroundImage
-          Tag="section"
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-          // style={{
-          //   // Defaults are overwrite-able by setting one of the following:
-          //   // backgroundSize: '',
-          //   // backgroundPosition: '',
-          //   // backgroundRepeat: '',
-          // }}
-          // To "force" the classic fading in of every image (especially on
-          // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
-          // fadeIn={`soft`}
-        >
+        <BackgroundImage Tag="section" className={className} fluid={imageData}>
           {children}
         </BackgroundImage>
       )
