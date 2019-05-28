@@ -11,13 +11,16 @@
 }
 
 .Body_imageContainer {
-  min-width: 300px;
-  margin-top: -80px;
+  width: 550px;
+  margin-top: -160px;
+  border-radius: 85px;
+  overflow: hidden;
 }
 
-.Body_date {
+.Body_dateContainer {
   z-index: 1;
   font-size: 80px;
+  margin-top: -40px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -25,7 +28,7 @@
     font-size: 50px;
   }
 
-  .Body_date {
+  .Body_dateContainer {
     font-size: 75px;
   }
 }
@@ -35,7 +38,13 @@
     font-size: 40px;
   }
 
-  .Body_date {
+  .Body_dateContainer {
+    margin-top: -15px;
     font-size: 55px;
+  }
+
+  .Body_imageContainer {
+    margin-top: -60px;
+    width: 350px;
   }
 }
