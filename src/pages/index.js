@@ -1,22 +1,23 @@
 import React from "react"
 
-import Logo from "../components/Logo"
 import SEO from "../components/seo"
 import "./index.css"
-import Background from "../components/Background"
+import Body from "../components/Body"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const Index = () => (
-  <Background>
-    <div className="Index_container">
-      <SEO title="Home" />
-      <div className="Index_logoContainer">
-        <Logo />
-      </div>
-      <h1>Vicky and Albert</h1>
-      <h1>July 25, 2020</h1>
-      <p>Rest of the site coming soon</p>
+  <div className="Index_container">
+    <div className="Index_header">
+      <Header />
     </div>
-  </Background>
+    <div className="Index_body">
+      <Body />
+    </div>
+    <div className="Index_footer">
+      <Footer />
+    </div>
+  </div>
 )
 
 export default Index

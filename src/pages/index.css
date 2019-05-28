@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Popsie";
+  src: url("../fonts/Popsies.ttf");
+  src: url("../fonts/Popsies.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Popsies.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Popsies.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Popsies.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Popsies.svg") format("svg"); /* Legacy iOS */
+}
+
 body {
   margin: 0;
 }
@@ -5,8 +15,28 @@ body {
 .Index_container {
   height: 100vh;
   width: 100vw;
+  display: grid;
+  grid-template-columns: auto 2fr auto;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-row-gap: 25px;
+  grid-template-areas:
+    "header header header"
+    "body body body"
+    "footer footer footer";
+  justify-items: center;
+  background-image: url("../images/ivory-off-white-paper-brightened.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
-.Index_logoContainer {
-  max-width: 300px;
+.Index_header {
+  grid-area: header;
+}
+
+.Index_body {
+  grid-area: body;
+}
+
+.Index_footer {
+  grid-area: footer;
 }
