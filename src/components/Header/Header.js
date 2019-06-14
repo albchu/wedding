@@ -1,13 +1,17 @@
 import React from "react"
-import Logo from "../Logo"
+import LogoV2 from "../LogoV2"
+import { isMobile } from "../../hooks/breakpoints"
 import "./Header.css"
 
 const Header = () => {
+  // const isMobile = useMediaQuery("(max-width:700px)")
   return (
     <div className="Header_container">
-      <div className="Header_logoContainer">
-        <Logo />
-      </div>
+      {isMobile() && (
+        <div className="Header_logoContainer">
+          <LogoV2 />
+        </div>
+      )}
     </div>
   )
 }
