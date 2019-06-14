@@ -4,7 +4,6 @@ import { isMobile } from "../../hooks/breakpoints"
 import "./Header.css"
 
 const Header = () => {
-  // const isMobile = useMediaQuery("(max-width:700px)")
   return (
     <div className="Header_container">
       {isMobile() && (

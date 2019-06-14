@@ -1,0 +1,25 @@
+.SaveTheDate_container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.SaveTheDate_header {
+  background-image: url("../../images/SaveDate_Logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.SaveTheDate_body {
+  background-image: url("../../images/HomePage_Logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.SaveTheDate_divider {
+  height: 5px;
+  background-color: black;
+  width: 60vw;
+  max-width: 400px;
+  align-self: center;
+  justify-self: center;
+}
