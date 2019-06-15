@@ -6,15 +6,17 @@ import "./Header.css"
 
 const Header = () => {
   return (
-    <Fade className="Header_container">
-      {isMobile() && (
-        <Fade>
-          <div className="Header_logoContainer">
-            <LogoV2 />
-          </div>
-        </Fade>
-      )}
-    </Fade>
+    <div className="Header_container">
+      <Fade>
+        {isMobile() && (
+          <Fade>
+            <div className="Header_logoContainer">
+              <LogoV2 />
+            </div>
+          </Fade>
+        )}
+      </Fade>
+    </div>
   )
 }
 

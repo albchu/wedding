@@ -1,7 +1,8 @@
 .Header_container {
+  z-index: 5;
 }
 
 .Header_logoContainer {
-  padding-top: 15vh;
+  padding-top: 12vh;
   width: 120px;
 }
