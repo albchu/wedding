@@ -1,11 +1,29 @@
 .Body_container {
   font-family: Popsie;
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 700px));
+  grid-template-columns: repeat(2, minmax(400px, 900px));
   grid-column-gap: 25px;
+  align-items: baseline;
 }
 
-.Body_container_mobile {
-  grid-template-columns: 100vw;
-  grid-template-rows: repeat(2, 100vh);
+.Body_saveTheDate {
+  transform: "scale(0.7)";
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Body_container {
+    grid-template-columns: 100vw;
+    align-items: end;
+    grid-template-rows: repeat(2, 80vh);
+  }
+
+  .Body_saveTheDate {
+    align-self: center;
+  }
+
+  .Body_coffeeDate {
+    width: 150%;
+    justify-self: center;
+  }
 }

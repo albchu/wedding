@@ -16,31 +16,6 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: auto 2fr auto;
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-row-gap: 25px;
-  grid-template-areas:
-    "header header header"
-    "body body body"
-    "footer footer footer";
+  grid-template-rows: 0.5fr 5fr auto;
   justify-items: center;
-  background-size: cover;
-  background-repeat: repeat-y;
-}
-
-.Index_header {
-  grid-area: header;
-}
-
-.Index_body {
-  grid-area: body;
-}
-
-.Index_footer {
-  grid-area: footer;
-}
-@media only screen and (max-width: 500px) {
-  .Index_container {
-    grid-row-gap: 0px;
-  }
 }

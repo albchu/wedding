@@ -8,15 +8,9 @@ import Footer from "../components/Footer"
 
 const Index = () => (
   <div className="Index_container">
-    <div className="Index_header">
-      <Header />
-    </div>
-    <div className="Index_body">
-      <VickysHotBody />
-    </div>
-    <div className="Index_footer">
-      <Footer />
-    </div>
+    <Header />
+    <VickysHotBody />
+    {/* <Footer /> */}
   </div>
 )
 
