@@ -19,4 +19,39 @@
   height: 100%;
   width: 100%;
   background-color: white;
+  color: #0d3b62;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+    "title title title"
+    "where divider when";
+  justify-content: center;
+}
+
+.Details_internal_container_title {
+  font-family: "Segoe UI";
+  font-weight: 900;
+  font-size: 2em;
+  grid-area: title;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.Details_internal_container_divider {
+  grid-area: divider;
+  height: 20vh;
+  width: 1px;
+  background-color: #0d3b62;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.Details_internal_container_when {
+  grid-area: when;
+  text-align: left;
+}
+.Details_internal_container_where {
+  grid-area: where;
+  text-align: right;
 }
