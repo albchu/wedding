@@ -24,11 +24,11 @@
   .Body_coffeeDateContainer {
     overflow: hidden;
     width: 100vw;
+    z-index: 2;
   }
 
   .Body_coffeeDate {
     width: 150%;
     margin-left: -30%;
-    /* justify-self: center; */
   }
 }
