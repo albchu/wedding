@@ -21,9 +21,14 @@
   .Body_saveTheDate {
     align-self: center;
   }
+  .Body_coffeeDateContainer {
+    overflow: hidden;
+    width: 100vw;
+  }
 
   .Body_coffeeDate {
     width: 150%;
-    justify-self: center;
+    margin-left: -30%;
+    /* justify-self: center; */
   }
 }

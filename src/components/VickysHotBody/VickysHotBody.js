@@ -6,8 +6,10 @@ import "./VickysHotBody.css"
 const Body = () => {
   return (
     <div className={"Body_container"}>
-      <div className="Body_coffeeDate">
-        <CouplesCoffeeImage />
+      <div className="Body_coffeeDateContainer">
+        <div className="Body_coffeeDate">
+          <CouplesCoffeeImage />
+        </div>
       </div>
 
       <div className="Body_saveTheDate">
