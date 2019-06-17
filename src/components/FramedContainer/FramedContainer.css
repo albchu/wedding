@@ -31,7 +31,25 @@
   margin-bottom: -8px;
 }
 
-.FramedContainer_header_container {
-  margin-top: -40px;
-  background-color: white;
+@media only screen and (max-width: 700px) {
+  .FramedContainer_border {
+    background-image: radial-gradient(
+      circle at center,
+      #f8d4b6 2.5px,
+      rgba(255, 255, 255, 0) 3px
+    );
+    background-size: 20px 15px;
+    background-repeat: repeat-x;
+  }
+  .FramedContainer_border_top {
+    margin-top: -8px;
+  }
+
+  .FramedContainer_border_bottom {
+    margin-bottom: -8px;
+  }
+  .FramedContainer_container {
+    margin-top: 0px;
+    margin-bottom: 35px;
+  }
 }

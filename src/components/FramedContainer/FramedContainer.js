@@ -9,9 +9,7 @@ const FramedContainer = ({ children, HeaderComponent = LogoHeader }) => {
   return (
     <div className="FramedContainer_container">
       <div className="FramedContainer_border FramedContainer_border_top" />
-      <div className="FramedContainer_header_container">
-        <HeaderComponent />
-      </div>
+      <HeaderComponent />
       {children}
       <div className="FramedContainer_border FramedContainer_border_bottom" />
     </div>

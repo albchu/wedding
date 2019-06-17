@@ -1,4 +1,15 @@
 .LogoHeader_container {
   width: 150px;
-  height: 100px;
+  height: 40px;
+  background-color: white;
+  margin-top: -40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .LogoHeader_container {
+    margin-top: -25px;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+  }
 }
