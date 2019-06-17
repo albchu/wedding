@@ -1,7 +1,6 @@
 import React from "react"
 import CouplesCoffeeImage from "./CouplesCoffeeImage"
 import SaveTheDate from "./SaveTheDate"
-import Details from "../Details"
 import Fade from "react-reveal/Fade"
 import { isMobile } from "../../hooks/breakpoints"
 import "./VickysHotBody.css"

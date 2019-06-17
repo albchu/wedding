@@ -1,10 +1,3 @@
-.Details_container {
-  max-width: 1800px;
-  background: linear-gradient(to bottom, #f2c185, #a27645);
-  padding: 1px;
-  width: 90%;
-}
-
 .Details_internal_container {
   height: 100%;
   width: 100%;
