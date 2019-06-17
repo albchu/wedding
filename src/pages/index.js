@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import "./index.css"
 import VickysHotBody from "../components/VickysHotBody"
 import Header from "../components/Header"
-// import Footer from "../components/Footer"
+import Details from "../components/Details"
 
 const Index = () => (
   <>
@@ -12,7 +12,7 @@ const Index = () => (
     <div className="Index_container">
       <Header />
       <VickysHotBody />
-      {/* <Footer /> */}
+      <Details />
     </div>
   </>
 )

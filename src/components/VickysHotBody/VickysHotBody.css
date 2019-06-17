@@ -15,7 +15,8 @@
   .Body_saveTheDate_container {
     grid-template-columns: 100vw;
     align-items: end;
-    grid-template-rows: repeat(2, 90vh);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 50px;
   }
 
   .Body_saveTheDate {

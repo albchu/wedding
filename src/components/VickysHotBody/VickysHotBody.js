@@ -25,8 +25,6 @@ const Body = () => {
           </Fade>
         </div>
       </div>
-
-      <Details />
     </div>
   )
 }

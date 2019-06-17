@@ -33,9 +33,10 @@ body {
 }
 
 .Index_container {
-  height: 100vh;
-  width: 100vw;
+  margin: 0px;
   display: grid;
-  grid-template-rows: 0.5fr 5fr auto;
+  grid-template-rows: 0.5fr auto auto;
+  grid-template-columns: 100vw;
+  grid-row-gap: 50px;
   justify-items: center;
 }

@@ -1,17 +1,7 @@
 .Details_container {
-  height: 100vh;
-  position: relative;
-  width: 100vw;
   max-width: 1800px;
-}
-.Details_border {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   background: linear-gradient(to bottom, #f2c185, #a27645);
   padding: 1px;
-  height: 90%;
   width: 90%;
 }
 
@@ -63,6 +53,7 @@
   display: grid;
   grid-auto-rows: min-content;
   grid-row-gap: 4px;
+  justify-content: center;
 }
 
 .Details_internal_container_header_container {

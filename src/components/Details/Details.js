@@ -1,6 +1,7 @@
 import React from "react"
 import { isMobile } from "../../hooks/breakpoints"
 import CalendarMenu from "../CalendarMenu"
+import LocationMap from "../LocationMap"
 import Fade from "react-reveal/Fade"
 import "./Details.css"
 
@@ -39,6 +40,7 @@ const Details = () => {
               <div>133 9 Ave SW</div>
               <div>Calgary AB</div>
               <div>Canada T2P 2M3</div>
+              <LocationMap />
             </Fade>
           </div>
         </div>
