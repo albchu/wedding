@@ -18,10 +18,11 @@
 
 .react-add-to-calendar__dropdown ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .react-add-to-calendar__dropdown ul li {
-  padding: 5px;
+  padding-bottom: 5px;
 }
 
 .react-add-to-calendar__dropdown ul li a {
