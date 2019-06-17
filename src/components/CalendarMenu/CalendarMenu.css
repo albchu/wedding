@@ -1,0 +1,40 @@
+.CalendarMenu_container {
+  cursor: pointer;
+  border: 1px solid #0d3b62;
+  border-radius: 15px;
+  padding: 15px 25px;
+  text-decoration: none;
+  width: 326px;
+}
+
+.CalendarMenu_container:hover {
+  background-color: #f6f6f6;
+}
+
+.react-add-to-calendar {
+  text-align: center;
+  user-select: none;
+}
+
+.react-add-to-calendar__dropdown ul {
+  list-style-type: none;
+}
+
+.react-add-to-calendar__dropdown ul li {
+  padding: 5px;
+}
+
+.react-add-to-calendar__dropdown ul li a {
+  text-decoration: none;
+  color: #0d3b62;
+}
+
+.react-add-to-calendar__dropdown ul li a:hover {
+  color: rgb(17, 87, 148);
+}
+
+@media only screen and (max-width: 700px) {
+  .CalendarMenu_container {
+    max-width: 235px;
+  }
+}
