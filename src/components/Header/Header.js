@@ -1,20 +1,15 @@
 import React from "react"
 import LogoV2 from "../LogoV2"
-import { isMobile } from "../../hooks/breakpoints"
 import Fade from "react-reveal/Fade"
-import "./Header.css"
+import clsx from "clsx"
 
-const Header = () => {
+const Header = ({ className }) => {
   return (
-    <div className="Header_container">
+    <div className={clsx(className, "Header_container")}>
       <Fade>
-        {isMobile() && (
-          <Fade>
-            <div className="Header_logoContainer">
-              <LogoV2 />
-            </div>
-          </Fade>
-        )}
+        <div className="Header_logoContainer">
+          <LogoV2 />
+        </div>
       </Fade>
     </div>
   )

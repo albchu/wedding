@@ -35,8 +35,63 @@ body {
 .Index_container {
   margin: 0px;
   display: grid;
-  grid-template-rows: 0.5fr auto auto;
-  grid-template-columns: 100vw;
+  grid-template-columns: repeat(2, minmax(400px, 900px));
+  grid-template-rows: auto auto;
   grid-row-gap: 50px;
-  justify-items: center;
+  grid-column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "coffeeDate saveTheDate"
+    "details details";
+}
+
+.Index_header,
+.Index_coffeeDate,
+.Index_saveTheDate,
+.Index_details {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.Index_header {
+  grid-area: header;
+  width: 38vw;
+  margin-top: 15vh;
+  margin-bottom: -10vh;
+  z-index: 3;
+}
+
+.Index_coffeeDate {
+  grid-area: coffeeDate;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.Index_saveTheDate {
+  grid-area: saveTheDate;
+  height: 80%;
+}
+
+.Index_details {
+  grid-area: details;
+}
+
+@media only screen and (max-width: 700px) {
+  .Index_container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 0.5fr repeat(auto-fill, minmax(100vh, auto));
+    grid-template-areas:
+      "header"
+      "coffeeDate"
+      "saveTheDate"
+      "details";
+  }
+
+  .Index_coffeeDate_internal {
+    width: 150%;
+    margin-left: -30%;
+  }
 }

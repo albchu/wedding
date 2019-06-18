@@ -6,9 +6,9 @@ import FramedContainer from "../FramedContainer"
 import Fade from "react-reveal/Fade"
 import "./Details.css"
 
-const Details = () => {
+const Details = ({ className }) => {
   return (
-    <FramedContainer>
+    <FramedContainer className={className}>
       <div className="Details_internal_container">
         <Fade delay={100}>
           <div className="Details_internal_container_title">the wedding</div>

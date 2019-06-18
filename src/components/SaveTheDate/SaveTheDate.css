@@ -1,0 +1,48 @@
+.SaveTheDateHeader_container {
+  width: 400px;
+  height: 100px;
+  margin-top: -55px;
+}
+
+.SaveTheDate_container {
+  width: 100%;
+  height: 100%;
+}
+
+.SaveTheDate_underline {
+  background-color: #ebb485;
+  width: 100%;
+  height: 2px;
+  margin-top: 18px;
+}
+
+.SaveTheDate_dots {
+  background-image: radial-gradient(
+    circle at center,
+    #f8d4b6 5px,
+    rgba(255, 255, 255, 0) 6px
+  );
+  background-size: 30px 15px;
+  background-repeat: repeat-x;
+  height: 15px;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .SaveTheDate_dots {
+    background-image: radial-gradient(
+      circle at center,
+      #f8d4b6 2.5px,
+      rgba(255, 255, 255, 0) 3px
+    );
+    background-size: 20px 15px;
+  }
+
+  .SaveTheDateHeader_container {
+    width: 250px;
+    height: 100px;
+    margin-top: -35px;
+  }
+}
