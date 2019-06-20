@@ -14,7 +14,9 @@ const FramedContainer = ({
   return (
     <div className={clsx(className, "FramedContainer_container")}>
       <div className="FramedContainer_border FramedContainer_border_top" />
-      <HeaderComponent />
+      <div className="FramedContainer_header">
+        <HeaderComponent />
+      </div>
       {children}
       <div className="FramedContainer_border FramedContainer_border_bottom" />
     </div>
