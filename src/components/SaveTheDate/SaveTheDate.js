@@ -10,12 +10,16 @@ const SaveTheDateHeader = () => (
     <Fade delay={200}>
       <SaveTheDateHeaderImage />
     </Fade>
-    <Fade delay={300}>
-      <div className="SaveTheDate_underline" />
-    </Fade>
-    <Fade delay={400}>
-      <div className="SaveTheDate_dots" />
-    </Fade>
+    <div className="SaveTheDateHeader_underline_container">
+      <div className="SaveTheDateHeader_underline_borderLeft" />
+      <div className="SaveTheDateHeader_underline_borderRight" />
+      <Fade delay={300}>
+        <div className="SaveTheDate_underline" />
+      </Fade>
+      <Fade delay={400}>
+        <div className="SaveTheDate_dots" />
+      </Fade>
+    </div>
   </div>
 )
 

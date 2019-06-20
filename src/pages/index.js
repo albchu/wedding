@@ -2,7 +2,6 @@ import React from "react"
 
 import SEO from "../components/seo"
 import "./index.css"
-import VickysHotBody from "../components/VickysHotBody"
 import Header from "../components/Header"
 import Details from "../components/Details"
 import CoffeeDate from "../components/CoffeeDate"
@@ -20,6 +19,7 @@ const Index = () => (
         </div>
       </div>
       <SaveTheDate className="Index_saveTheDate" />
+      <div className="Index_spacer" />
       <Details className="Index_details" />
     </div>
   </>

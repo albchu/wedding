@@ -79,19 +79,29 @@ body {
   grid-area: details;
 }
 
-@media only screen and (max-width: 700px) {
+.Index_spacer {
+  grid-area: spacer;
+}
+
+@media only screen and (max-width: 800px) {
   .Index_container {
     grid-template-columns: 100vw;
-    grid-template-rows: 0.5fr repeat(auto-fill, minmax(100vh, auto));
+    grid-row-gap: 0px;
+    grid-template-rows: 0.5fr minmax(100vh, auto) 70vh 30vh minmax(100vh, auto);
     grid-template-areas:
       "header"
       "coffeeDate"
       "saveTheDate"
+      "spacer"
       "details";
   }
 
   .Index_coffeeDate_internal {
     width: 150%;
     margin-left: -30%;
+  }
+
+  .Index_coffeeDate {
+    padding-bottom: 0px;
   }
 }
