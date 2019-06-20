@@ -22,12 +22,12 @@
     justify-items: center;
   }
 
-  .Body_saveTheDate {
+  /* .Body_saveTheDate {
     align-self: center;
     justify-self: center;
     width: 100%;
     text-align: center;
-  }
+  } */
   .Body_coffeeDate_container {
     overflow: hidden;
     width: 100vw;

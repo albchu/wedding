@@ -1,6 +1,7 @@
 import React from "react"
 import FramedContainer from "../FramedContainer"
 import SaveTheDateHeaderImage from "./SaveTheDateHeaderImage"
+import SaveTheDateBodyImage from "./SaveTheDateBodyImage"
 import "./SaveTheDate.css"
 
 const SaveTheDateHeader = () => (
@@ -15,10 +16,7 @@ const SaveTheDate = ({ className }) => {
   return (
     <FramedContainer className={className} HeaderComponent={SaveTheDateHeader}>
       <div className="SaveTheDate_container">
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
+        <SaveTheDateBodyImage />
       </div>
     </FramedContainer>
   )
