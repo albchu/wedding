@@ -9,11 +9,15 @@ const Blank2 = () => <div>hello</div>
 const FramedContainer = ({
   className,
   children,
+  topBorderWidth,
   HeaderComponent = LogoHeader,
 }) => {
   return (
     <div className={clsx(className, "FramedContainer_container")}>
-      <div className="FramedContainer_border FramedContainer_border_top" />
+      <div
+        className="FramedContainer_border FramedContainer_border_top"
+        style={{ width: topBorderWidth }}
+      />
       <div className="FramedContainer_header">
         <HeaderComponent />
       </div>

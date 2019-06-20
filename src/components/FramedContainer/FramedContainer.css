@@ -48,15 +48,9 @@
       #f8d4b6 2.5px,
       rgba(255, 255, 255, 0) 3px
     );
-    background-size: 20px 15px;
-  }
-  .FramedContainer_border_top {
-    top: 0px;
+    background-size: 15px 15px;
   }
 
-  .FramedContainer_border_bottom {
-    bottom: 0px;
-  }
   .FramedContainer_container {
     margin-top: 0px;
     margin-bottom: 35px;

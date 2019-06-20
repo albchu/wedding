@@ -1,8 +1,20 @@
 .LogoHeader_container {
   width: 150px;
   height: 40px;
-  background-color: white;
   margin-top: -40px;
+  position: relative;
+}
+
+.LogoHeader_fadeBG {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 40px 30px white;
 }
 
 @media only screen and (max-width: 700px) {
@@ -10,6 +22,10 @@
     margin-top: -25px;
     width: 80px;
     height: 40px;
-    background-color: white;
+  }
+
+  .LogoHeader_fadeBG {
+    padding-bottom: 20px;
+    width: 50%;
   }
 }

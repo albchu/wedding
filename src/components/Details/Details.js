@@ -7,8 +7,12 @@ import Fade from "react-reveal/Fade"
 import "./Details.css"
 
 const Details = ({ className }) => {
+  const mobile = isMobile()
   return (
-    <FramedContainer className={className}>
+    <FramedContainer
+      className={className}
+      topBorderWidth={mobile ? "70%" : "30%"}
+    >
       <div className="Details_internal_container">
         <Fade delay={100}>
           <div className="Details_internal_container_title">the wedding</div>
@@ -28,7 +32,7 @@ const Details = ({ className }) => {
             <div />
           </Fade>
         </div>
-        {!isMobile() && <div className="Details_internal_container_divider" />}
+        {!mobile && <div className="Details_internal_container_divider" />}
         <div className="Details_internal_container_info Details_where">
           <Fade right delay={200}>
             <div className="Details_internal_container_header_container">
