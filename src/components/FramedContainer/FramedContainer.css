@@ -1,5 +1,5 @@
 .FramedContainer_container {
-  max-width: 1800px;
+  max-width: 1700px;
   border: 1.5px solid #ebb485;
   width: 90%;
   margin-top: 80px;
@@ -34,11 +34,11 @@
 }
 
 .FramedContainer_border_top {
-  top: 0px;
+  top: -8px;
 }
 
 .FramedContainer_border_bottom {
-  bottom: 0px;
+  bottom: -8px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -51,11 +51,11 @@
     background-size: 20px 15px;
   }
   .FramedContainer_border_top {
-    margin-top: -8px;
+    top: 0px;
   }
 
   .FramedContainer_border_bottom {
-    margin-bottom: -8px;
+    bottom: 0px;
   }
   .FramedContainer_container {
     margin-top: 0px;
