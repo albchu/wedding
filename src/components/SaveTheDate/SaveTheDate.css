@@ -41,6 +41,10 @@
     background-size: 20px 15px;
   }
 
+  .SaveTheDate_underline {
+    height: 1px;
+  }
+
   .SaveTheDate_container {
     width: 90%;
     height: 100%;

@@ -11,7 +11,7 @@ const Details = ({ className }) => {
   return (
     <FramedContainer
       className={className}
-      topBorderWidth={mobile ? "70%" : "30%"}
+      topBorderWidth={mobile ? "71.3%" : "30%"}
     >
       <div className="Details_internal_container">
         <Fade delay={100}>
