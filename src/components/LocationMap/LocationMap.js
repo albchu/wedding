@@ -1,5 +1,5 @@
 import React from "react"
-import LocationMapImage from "./LocationMapImage"
+import LocationMapImage from "./LocationMapImageV2"
 import "./LocationMap.css"
 
 const LocationMap = () => {

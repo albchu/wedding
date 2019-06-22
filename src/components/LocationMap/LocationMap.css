@@ -22,7 +22,7 @@
     transform-origin: center;
     width: 78vw;
     margin: 5px 0px 15px 0px;
-    height: 150px;
+    height: 180px;
     text-align: center;
   }
 
@@ -32,7 +32,7 @@
   }
 
   .LocationMap_internal_container {
-    margin-top: -100px;
-    margin-left: -70px;
+    margin-top: -50px;
+    width: 320px;
   }
 }
