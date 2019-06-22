@@ -84,4 +84,9 @@
   .SaveTheDateHeader_underline_container {
     padding-top: 10px;
   }
+
+  .SaveTheDateHeader_underline_borderRight,
+  .SaveTheDateHeader_underline_borderLeft {
+    margin-top: 28px;
+  }
 }
