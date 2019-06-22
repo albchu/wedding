@@ -6,7 +6,6 @@
   text-decoration: none;
   width: 326px;
   height: 45px;
-  box-shadow: 3px 6px 8px 0px #8fa5b7;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
@@ -60,6 +59,11 @@
 
 @media only screen and (max-width: 700px) {
   .CalendarMenu_container {
-    max-width: 235px;
+    width: 65vw;
+    height: 28px;
+  }
+
+  .CalendarMenu_container_open {
+    height: 200px;
   }
 }

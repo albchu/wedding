@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import AddToCalendar from "react-add-to-calendar"
-import "./CalendarMenu.css"
+import ClickAwayListener from "@material-ui/core/ClickAwayListener"
 import clsx from "clsx"
+import "./CalendarMenu.css"
 
 const calendarEvent = {
   title: "Vicky & Albert's Wedding!",
@@ -22,20 +23,23 @@ const items = [
 
 const CalendarMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
+  console.log("isOpen", isOpen)
   return (
-    <div
-      className={clsx(
-        "CalendarMenu_container",
-        isOpen && "CalendarMenu_container_open"
-      )}
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      <AddToCalendar
-        event={calendarEvent}
-        buttonLabel="Add to Calendar"
-        listItems={items}
-      />
-    </div>
+    <ClickAwayListener onClickAway={() => setIsOpen(false)}>
+      <div
+        className={clsx(
+          "CalendarMenu_container",
+          isOpen && "CalendarMenu_container_open"
+        )}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <AddToCalendar
+          event={calendarEvent}
+          buttonLabel="Add to Calendar"
+          listItems={items}
+        />
+      </div>
+    </ClickAwayListener>
   )
 }
 
