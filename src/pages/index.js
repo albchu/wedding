@@ -18,6 +18,7 @@ const Index = () => (
           <CoffeeDate />
         </div>
       </div>
+      <div className="Index_saveTheDateTopSpacing" />
       <SaveTheDate className="Index_saveTheDate" />
       <div className="Index_spacer" />
       <Details className="Index_details" />

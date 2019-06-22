@@ -2,10 +2,9 @@
   cursor: pointer;
   border: 1px solid #0d3b62;
   border-radius: 15px;
-  padding: 15px 25px;
   text-decoration: none;
-  width: 326px;
-  height: 45px;
+  width: 320px;
+  height: 65px;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
@@ -26,7 +25,13 @@
 
 .react-add-to-calendar__wrapper {
   position: relative;
+  margin-top: 10px;
   z-index: 2;
+}
+
+.react-add-to-calendar__button span {
+  padding: 30px 25px;
+  font-weight: 600;
 }
 
 .react-add-to-calendar__dropdown {
@@ -59,11 +64,11 @@
 
 @media only screen and (max-width: 700px) {
   .CalendarMenu_container {
-    width: 65vw;
-    height: 28px;
+    width: 225px;
+    height: 50px;
   }
 
   .CalendarMenu_container_open {
-    height: 200px;
+    height: 230px;
   }
 }
