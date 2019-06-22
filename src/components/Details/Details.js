@@ -2,7 +2,7 @@ import React from "react"
 import { isMobile } from "../../hooks/breakpoints"
 import CalendarMenu from "../CalendarMenu"
 import LocationMap from "../LocationMap"
-import FramedContainer from "../FramedContainer"
+import FramedContainer from "../FramedContainerV2"
 import Fade from "react-reveal/Fade"
 import "./Details.css"
 

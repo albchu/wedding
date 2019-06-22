@@ -1,5 +1,5 @@
 import React from "react"
-import FramedContainer from "../FramedContainer"
+import FramedContainer from "../FramedContainerV2"
 import SaveTheDateHeaderImage from "./SaveTheDateHeaderImage"
 import SaveTheDateBodyImage from "./SaveTheDateBodyImage"
 import Fade from "react-reveal/Fade"

@@ -35,7 +35,7 @@ body {
 .Index_container {
   margin: 0px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 900px));
+  grid-template-columns: repeat(2, minmax(400px, 800px));
   grid-template-rows: auto auto;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
