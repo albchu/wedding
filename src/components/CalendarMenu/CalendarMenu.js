@@ -23,7 +23,6 @@ const items = [
 
 const CalendarMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
-  console.log("isOpen", isOpen)
   return (
     <ClickAwayListener onClickAway={() => setIsOpen(false)}>
       <div

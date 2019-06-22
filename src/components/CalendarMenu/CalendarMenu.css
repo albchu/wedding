@@ -29,8 +29,16 @@
   z-index: 2;
 }
 
+.CalendarMenu_container_open
+  .react-add-to-calendar
+  .react-add-to-calendar__wrapper
+  .react-add-to-calendar__button
+  span {
+  padding-bottom: 0px;
+}
+
 .react-add-to-calendar__button span {
-  padding: 30px 25px;
+  padding: 30px 25px 15px;
   font-weight: 600;
 }
 
