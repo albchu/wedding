@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import AddToCalendar from "react-add-to-calendar"
 import "./CalendarMenu.css"
+import clsx from "clsx"
 
 const calendarEvent = {
   title: "Vicky & Albert's Wedding!",
@@ -20,8 +21,15 @@ const items = [
 ]
 
 const CalendarMenu = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="CalendarMenu_container">
+    <div
+      className={clsx(
+        "CalendarMenu_container",
+        isOpen && "CalendarMenu_container_open"
+      )}
+      onClick={() => setIsOpen(!isOpen)}
+    >
       <AddToCalendar
         event={calendarEvent}
         buttonLabel="Add to Calendar"

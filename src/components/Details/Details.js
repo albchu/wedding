@@ -42,7 +42,9 @@ const Details = ({ className }) => {
             <div>133 9 Ave SW</div>
             <div>Calgary AB</div>
             <div>Canada T2P 2M3</div>
-            <LocationMap />
+            <Fade delay={400}>
+              <LocationMap />
+            </Fade>
           </Fade>
         </div>
       </div>
