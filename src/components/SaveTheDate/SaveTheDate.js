@@ -1,5 +1,6 @@
 import React from "react"
 import FramedContainer from "../FramedContainerV2"
+import DotBar from "../DotBar"
 import SaveTheDateHeaderImage from "./SaveTheDateHeaderImage"
 import SaveTheDateBodyImage from "./SaveTheDateBodyImage"
 import Fade from "react-reveal/Fade"
@@ -11,13 +12,13 @@ const SaveTheDateHeader = () => (
       <SaveTheDateHeaderImage />
     </Fade>
     <div className="SaveTheDateHeader_underline_container">
-      <div className="SaveTheDateHeader_underline_borderLeft" />
-      <div className="SaveTheDateHeader_underline_borderRight" />
       <Fade delay={300}>
         <div className="SaveTheDate_underline" />
       </Fade>
       <Fade delay={400}>
-        <div className="SaveTheDate_dots" />
+        <div className="SaveTheDate_dots">
+          <DotBar />
+        </div>
       </Fade>
     </div>
   </div>

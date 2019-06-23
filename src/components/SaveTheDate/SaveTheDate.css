@@ -13,22 +13,12 @@
 .SaveTheDate_underline {
   background-color: #ebb485;
   width: 100%;
-  height: 2px;
+  height: 1px;
   margin-top: 18px;
   z-index: 12;
 }
 
 .SaveTheDate_dots {
-  background-image: radial-gradient(
-    circle at center,
-    #f8d4b6 5px,
-    rgba(255, 255, 255, 0) 6px
-  );
-  background-size: 30px 15px;
-  background-repeat: repeat-x;
-  height: 15px;
-  background-color: white;
-  text-align: center;
   margin-top: 10px;
 }
 
@@ -36,32 +26,8 @@
   position: relative;
 }
 
-.SaveTheDateHeader_underline_borderRight,
-.SaveTheDateHeader_underline_borderLeft {
-  position: absolute;
-  width: 3px;
-  z-index: 2;
-  height: 10px;
-  box-shadow: 0px 0px 5px 5px white;
-  margin-top: 10px;
-}
-
-.SaveTheDateHeader_underline_borderRight {
-  left: -5px;
-}
-
-.SaveTheDateHeader_underline_borderLeft {
-  right: -5px;
-}
-
 @media only screen and (max-width: 700px) {
   .SaveTheDate_dots {
-    background-image: radial-gradient(
-      circle at center,
-      #f8d4b6 2.5px,
-      rgba(255, 255, 255, 0) 3px
-    );
-    background-size: 20px 15px;
     margin-top: 2px;
   }
 
@@ -83,10 +49,5 @@
 
   .SaveTheDateHeader_underline_container {
     padding-top: 10px;
-  }
-
-  .SaveTheDateHeader_underline_borderRight,
-  .SaveTheDateHeader_underline_borderLeft {
-    margin-top: 28px;
   }
 }

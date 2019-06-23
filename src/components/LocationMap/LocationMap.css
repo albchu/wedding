@@ -8,6 +8,8 @@
   height: 310px;
   transition: all 0.5s ease-in-out;
   transform-origin: top left;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .LocationMap_internal_container {

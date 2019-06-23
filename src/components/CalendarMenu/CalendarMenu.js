@@ -9,8 +9,8 @@ const calendarEvent = {
   description:
     "Party it dup with Vicky and Albert on their friggin wedding day!",
   location: "Fairmont Palliser, 133 9 Ave SW, Calgary, AB T2P 2M3, Canada",
-  startTime: "2020-07-25T14:00:00-07:00",
-  endTime: "2020-07-25T23:59:00-07:00",
+  startTime: "2020-07-25T14:00:00-06:00",
+  endTime: "2020-07-25T23:59:00-06:00",
 }
 
 const items = [

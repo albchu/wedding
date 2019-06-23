@@ -24,8 +24,8 @@ const DotBar = ({ size, minGap, dotSize }) => {
     // Nesting div is necessary because of react-sizeme size detection element
     <div>
       <div className="DotBar_container">
-        {[...Array(numDots)].map(() => (
-          <Dot size={dotSizeToUse} />
+        {[...Array(numDots)].map((_, i) => (
+          <Dot size={dotSizeToUse} key={i} />
         ))}
       </div>
     </div>
