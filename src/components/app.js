@@ -1,11 +1,13 @@
 import React from "react"
-import Logo from "./logo"
+import SplashPage from "./spash-page"
+import "./app.scss"
 
 const App = () => {
   return (
-    <div>
-      this is where all the magic happens
-      <Logo color={"white"} />
+    <div className="app">
+      <SplashPage />
+      <SplashPage />
+      <SplashPage />
     </div>
   )
 }

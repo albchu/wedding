@@ -1,0 +1,15 @@
+.splashPage {
+  background-image: url("../images/main_splash_centered.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-position: center;
+}
+
+.splashPage__logo {
+  padding-top: 25%;
+}
