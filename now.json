@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "wedding",
-  "alias": ["ilaochu.ca"],
   "builds": [
     {
       "src": "package.json",

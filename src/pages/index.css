@@ -43,7 +43,13 @@ body {
   align-items: center;
   grid-template-areas:
     "coffeeDate saveTheDate"
-    "details details";
+    "details details"
+    "test test";
+}
+
+.test {
+  grid-area: test;
+  color: white;
 }
 
 .Index_header,
