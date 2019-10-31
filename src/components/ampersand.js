@@ -1,7 +1,13 @@
 import React from "react"
 
-const Ampersand = () => {
-  return <div>&</div>
+import "./ampersand.scss"
+
+const Ampersand = ({ color, size }) => {
+  return (
+    <div className="ampersand" style={{ color, fontSize: size }}>
+      {"&"}
+    </div>
+  )
 }
 
 export default Ampersand

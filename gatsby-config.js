@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vicky & Albert`,
+    title: `Vicky & Albert's Wedding`,
     description: `It's for our wedding.`,
     author: `@gatsbyjs`,
   },
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#F8F6F7`,
         theme_color: `#F8F6F7`,
         display: `fullscreen`,
-        icon: `src/images/Logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons8-diamond-ring-16.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
