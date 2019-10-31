@@ -1,0 +1,86 @@
+.aboutUs_container {
+  background-color: white;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "albertAvatar"
+    "albertName"
+    "albertDescription"
+    "vickyAvatar"
+    "vickyName"
+    "vickyDescription";
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+
+@mixin avatar {
+  width: 200px;
+  height: 230px;
+  background-size: cover;
+}
+
+@mixin textBlock {
+  padding-left: 30vw;
+  padding-right: 5vw;
+}
+
+@mixin description {
+  font-size: 1em;
+  color: #7d7d7d;
+}
+
+@mixin name {
+  font-size: 2em;
+  align-self: end;
+  color: adjust-color(
+    $color: #545970,
+    $hue: 0,
+    $saturation: 10%,
+    $lightness: 10%,
+    $alpha: 1
+  );
+}
+
+.albertAvatar {
+  @include avatar;
+  margin-bottom: -20px;
+  grid-area: albertAvatar;
+  background-image: url("../images/albert_avatar.png");
+}
+
+.vickyAvatar {
+  @include avatar;
+  margin-top: 5vh;
+  grid-area: vickyAvatar;
+  background-image: url("../images/vicky_avatar.png");
+}
+
+.albertName {
+  @include name;
+  @include textBlock;
+  grid-area: albertName;
+}
+
+.albertDescription {
+  @include description;
+  @include textBlock;
+  grid-area: albertDescription;
+}
+
+.vickyName {
+  @include name;
+  @include textBlock;
+  grid-area: vickyName;
+}
+
+.vickyDescription {
+  @include description;
+  @include textBlock;
+  grid-area: vickyDescription;
+}

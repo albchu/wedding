@@ -1,13 +1,14 @@
 import React from "react"
 import SplashPage from "./spash-page"
 import "./app.scss"
+import AboutUs from "./about-us"
 
 const App = () => {
   return (
     <div className="app">
       <SplashPage />
-      <SplashPage />
-      <SplashPage />
+      <AboutUs />
+      {/* <SplashPage /> */}
     </div>
   )
 }

@@ -4,7 +4,6 @@ import Logo from "./logo"
 import "./spash-page.scss"
 
 const SplashPage = () => {
-  console.log("rendered!")
   return (
     <div className="splashPage">
       <div className="splashPage__logo">
