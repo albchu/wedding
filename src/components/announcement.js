@@ -6,7 +6,7 @@ const Announcement = () => {
   return (
     <div className="announcement">
       <div className="title">
-        <SectionTitle title="We're getting marrried!" />
+        <SectionTitle title="We're getting married!" />
       </div>
     </div>
   )

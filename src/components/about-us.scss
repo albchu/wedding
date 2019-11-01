@@ -1,5 +1,7 @@
 .aboutUs_container {
   background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .aboutUs {
@@ -7,12 +9,11 @@
   grid-template-columns: auto;
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
-    "albertAvatar"
-    "albertName"
-    "albertDescription"
-    "vickyAvatar"
-    "vickyName"
-    "vickyDescription";
+    "albertAvatar albertName"
+    "albertAvatar albertDescription"
+    "padding padding"
+    "vickyName vickyAvatar"
+    "vickyDescription vickyAvatar";
   font-family: "Lato", sans-serif;
   height: 100%;
   margin-bottom: 10vh;
@@ -20,23 +21,27 @@
 
 @mixin avatar {
   background-size: cover;
-  margin-left: 5vw;
-  margin-bottom: 15px;
 }
 
-@mixin textBlock {
-  padding-left: 30vw;
-  padding-right: 5vw;
+@mixin textLeft {
+  padding-left: 10px;
 }
 
 @mixin description {
-  font-size: 1.1em;
-  color: #7d7d7d;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  color: rgb(102, 101, 101);
+  p {
+    margin: 0px;
+  }
 }
 
 @mixin name {
-  font-size: 2em;
+  font-family: "Rock Salt", cursive;
+  font-size: 1.6em;
+  line-height: 1.8em;
   align-self: end;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
   color: adjust-color(
     $color: #545970,
     $hue: 0,
@@ -46,43 +51,53 @@
   );
 }
 
+.padding {
+  grid-area: padding;
+  padding-top: 20px;
+}
+
 .albertAvatar {
   @include avatar;
-  width: 160px;
-  height: 234px;
+  width: 145px;
+  height: 213px;
   grid-area: albertAvatar;
+  justify-self: end;
   background-image: url("../images/albert_avatar.png");
 }
 
 .vickyAvatar {
   @include avatar;
-  margin-top: 6vh;
-  width: 182px;
-  height: 244px;
+  margin-top: 10px;
+  margin-left: 45px;
+  width: 160px;
+  height: 214px;
   grid-area: vickyAvatar;
   background-image: url("../images/vicky_avatar.png");
 }
 
 .albertName {
+  @include textLeft;
   @include name;
-  @include textBlock;
   grid-area: albertName;
 }
 
 .albertDescription {
   @include description;
-  @include textBlock;
+  @include textLeft;
   grid-area: albertDescription;
 }
 
 .vickyName {
   @include name;
-  @include textBlock;
+  text-align: right;
   grid-area: vickyName;
+  color: #6e527a;
+  margin-right: -35px;
 }
 
 .vickyDescription {
   @include description;
-  @include textBlock;
+  text-align: right;
   grid-area: vickyDescription;
+  margin-right: -35px;
 }

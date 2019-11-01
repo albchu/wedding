@@ -8,12 +8,17 @@ const AboutUs = () => {
         <div className="albertAvatar" />
         <div className="vickyAvatar" />
         <div className="vickyDescription">
-          Smart girl with opinions. Strong belief in the sanctity of nugs and
-          naps. Enjoys doing dumb stuff with her fiancée and cuddling their dog.{" "}
+          Smart girl with opinions.
+          <p />
+          Strong belief in the sanctity of nugs and
+          naps. Enjoys doing dumb stuff with her fiancé and cuddling their dog.{" "}
         </div>
+        <div className="padding" />
         <div className="vickyName">Vicky Lao</div>
         <div className="albertDescription">
-          A tenacious lad. Likes video games and food. Enjoys spending time with
+          A tenacious lad.
+          <p />
+          Likes video games and food. Enjoys spending time with
           his fiancée, and their dog.
         </div>
         <div className="albertName">Albert Chu</div>
