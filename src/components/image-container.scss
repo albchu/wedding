@@ -1,0 +1,20 @@
+@mixin child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imageContainer__wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.imageContainer__content {
+  @include child;
+}
+
+.imageContainer__img {
+  @include child;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
