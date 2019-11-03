@@ -1,0 +1,41 @@
+.whenAndWhere {
+  background-image: url("../images/hugz.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  background-position: center top;
+}
+
+.whenAndWhere_title {
+  padding-top: 200px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "when and"
+    "where .";
+  justify-content: end;
+  align-items: baseline;
+  padding-left: 20px;
+
+  .when {
+    grid-area: when;
+  }
+
+  .and {
+    grid-area: and;
+    color: rgb(231, 231, 231);
+    text-shadow: 0px 1px 4px black;
+    margin-left: -25px;
+  }
+
+  .where {
+    grid-area: where;
+    padding-left: 22px;
+    margin-top: -18px;
+  }
+}

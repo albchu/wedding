@@ -8,7 +8,9 @@ const Logo = ({ color }) => {
       <div className="logo__initial" style={{ color }}>
         V
       </div>
-      <Ampersand color={color} size=".6em" />
+      <div className="ampersand">
+        <Ampersand color={color} size=".6em" />
+      </div>
       <div className="logo__initial" style={{ color }}>
         A
       </div>
