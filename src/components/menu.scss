@@ -1,0 +1,24 @@
+.menu {
+  background-image: url("../images/puffy_laugh.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 42vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  background-position: center top;
+}
+
+.menu_title {
+  padding-top: 200px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "when and"
+    "where .";
+  justify-content: end;
+  align-items: baseline;
+  padding-left: 20px;
+}

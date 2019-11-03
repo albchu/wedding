@@ -1,0 +1,16 @@
+import React from "react"
+import SectionTitle from "./section-title"
+import "./menu.scss"
+import Ampersand from "./ampersand";
+
+const Menu = () => {
+  return (
+    <div className="menu">
+      <div className="menu_title">
+        <SectionTitle title="Menu" />
+      </div>
+    </div>
+  )
+}
+
+export default Menu

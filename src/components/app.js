@@ -4,6 +4,7 @@ import "./app.scss"
 import AboutUs from "./about-us"
 import Announcement from "./announcement"
 import WhenAndWhere from "./when-and-where";
+import Menu from "./menu";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Announcement />
       <AboutUs />
       <WhenAndWhere />
+      <Menu />
     </div>
   )
 }
