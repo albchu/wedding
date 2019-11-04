@@ -1,0 +1,72 @@
+.whenWhereBody {
+  background-color: white;
+  color: #545970;
+  padding: 5vh 10px 5vh 10px;
+  font-family: "Nunito", sans-serif;
+}
+
+.map {
+  background-image: url("../images/map_circle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.circle {
+  height: 120px;
+  width: 120px;
+
+  border-radius: 50%;
+  background-color: #f5faff;
+  margin: 10px;
+}
+
+.circleButtonRow {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 2fr;
+  grid-template-areas: "circle row";
+  grid-column-gap: 15px;
+  align-items: center;
+
+  // Hotel name
+  p:first-child {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+  // Address
+  p:nth-child(2) {
+    font-size: 1.1em;
+  }
+
+  .circle {
+    grid-area: circle;
+  }
+  .row {
+    grid-area: row;
+  }
+}
+
+.address {
+  font-size: 0.9em;
+  p {
+    line-height: 0.2em;
+  }
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .date_day {
+    font-size: 1.6em;
+    line-height: 0.9em;
+  }
+
+  .date_year {
+    font-size: 1em;
+  }
+}

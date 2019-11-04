@@ -5,6 +5,7 @@ import AboutUs from "./about-us"
 import Announcement from "./announcement"
 import WhenAndWhere from "./when-and-where";
 import Menu from "./menu";
+import WhenAndWhereBody from "./when-and-where-body";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Announcement />
       <AboutUs />
       <WhenAndWhere />
+      <WhenAndWhereBody />
       <Menu />
     </div>
   )
