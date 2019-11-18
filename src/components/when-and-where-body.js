@@ -44,7 +44,7 @@ const WhenAndWhereBody = () => {
         </div>
       </div>
       <div className="schedule">
-        the scedule
+        the schedule: Vicky to do
     </div>
     </div>
   )
