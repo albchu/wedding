@@ -17,10 +17,10 @@ const WhenAndWhereBody = () => {
                 133 9 Ave SW
               </p>
               <p>
-                Calgary, AB, Canada
+                Calgary, AB
               </p>
               <p>
-                T2P-2M3
+              Canada T2P 2M3
               </p>
             </div>
         </div>
