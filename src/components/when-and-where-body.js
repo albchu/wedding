@@ -51,7 +51,7 @@ const WhenAndWhereBody = () => {
         <p/>
         </div>
         <div className="schedule">
-        🌼 2:00pm: Ceremony
+        💘 2:00pm: Ceremony
         <p/>
         🍸 5:30pm: Cocktail Hour
         <p/> 
