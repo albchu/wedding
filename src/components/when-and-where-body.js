@@ -9,10 +9,7 @@ const WhenAndWhereBody = () => {
           <div className="circle">
             <div className="map" />
           </div>
-        </div>
-        <div className="circleButtonRow">
-          <div className="row">
-            <div className="address">
+          <div className="address">
               <p>
                 Fairmont Palliser
               </p>
@@ -25,6 +22,12 @@ const WhenAndWhereBody = () => {
               <p>
                 T2P-2M3
               </p>
+            </div>
+        </div>
+        <div className="circleButtonRow">
+          <div className="row">
+            <div className="save_date">
+              Add to Calendar
             </div>
           </div>
           <div className="circle">
@@ -43,10 +46,24 @@ const WhenAndWhereBody = () => {
 
         </div>
       </div>
-      <div className="schedule">
-        the schedule: Vicky to do
+      <div className="schedule_title">
+        Schedule
+        <p/>
+        </div>
+        <div className="schedule">
+        🌼 2:00pm: Ceremony
+        <p/>
+        🍸 5:30pm: Cocktail Hour
+        <p/> 
+        🍽️ 6:00pm: Dinner
+        <p/> 
+        🍰 8:30pm: Cake Cutting
+        <p/>
+        🌮 11:00pm: TACO TIME!
+        <p/>  
+        </div>
     </div>
-    </div>
+
   )
 }
 

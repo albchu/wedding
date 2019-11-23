@@ -1,7 +1,7 @@
 .whenWhereBody {
   background-color: white;
   color: #545970;
-  padding: 5vh 10px 5vh 10px;
+  padding: 4vh 10px 4vh 10px;
   font-family: "Nunito", sans-serif;
 }
 
@@ -54,6 +54,13 @@
   }
 }
 
+.save_date {
+  font-size: 1.3em;
+  p {
+    line-height: 0.2em;
+  }
+}
+
 .date {
   display: flex;
   flex-direction: column;
@@ -69,4 +76,15 @@
   .date_year {
     font-size: 1em;
   }
+}
+
+.schedule_title {
+  padding-left: 1.5em;
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.schedule {
+  padding-left: 2em;
+  font-size: 1em;
 }
