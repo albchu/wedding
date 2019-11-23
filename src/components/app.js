@@ -6,6 +6,10 @@ import Announcement from "./announcement"
 import WhenAndWhere from "./when-and-where";
 import Menu from "./menu";
 import WhenAndWhereBody from "./when-and-where-body";
+import MenuBody from "./menu-body";
+import RSVP from "./rsvp";
+import TravelAndAcommodation from "./travel-and-acommodation";
+import Registry from "./registry";
 
 const App = () => {
   return (
@@ -16,6 +20,10 @@ const App = () => {
       <WhenAndWhere />
       <WhenAndWhereBody />
       <Menu />
+      <MenuBody />
+      <TravelAndAcommodation />
+      <RSVP />
+      <Registry />
     </div>
   )
 }
