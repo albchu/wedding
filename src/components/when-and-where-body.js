@@ -11,7 +11,10 @@ const WhenAndWhereBody = () => {
           </div>
           <div className="address">
               <p>
-                Fairmont Palliser
+                Fairmont Palliser 
+              </p>
+              <p>
+              Oak Room
               </p>
               <p>
                 133 9 Ave SW
@@ -55,7 +58,7 @@ const WhenAndWhereBody = () => {
         <p/>
         🍸 5:30pm: Cocktail Hour
         <p/> 
-        🍽️ 6:00pm: Dinner
+        🍽️ 6:30pm: Dinner
         <p/> 
         🍰 8:30pm: Cake Cutting
         <p/>

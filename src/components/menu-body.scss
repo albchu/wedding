@@ -1,4 +1,30 @@
 .menu_body {
-  height: 60vh;
+  height: 57vh;
   background-color: white;
+  color: #636363;
+  padding: 1vh 35px 1vh 35px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu_body_title {
+  font-weight: 700;
+  line-height: 22px;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  font-size: 1.2em;
+  color: #8d8d8d;
+}
+
+.menu_body_select {
+  font-style: italic;
+  color: #a9a9a9;
+}
+
+.entree_sub {
+  padding-bottom: 10px;
+  color: #9b9b9b;
 }
