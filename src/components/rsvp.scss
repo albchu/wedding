@@ -5,4 +5,17 @@
   background-position: center top;
   background-image: url("../images/early_hug.jpg");
   height: 100vh;
+  position: relative;
+}
+
+.rsvp_title {
+  padding-top: 2vh;
+  padding-left: 6vw;
+}
+
+.rsvp_centered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
