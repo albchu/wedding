@@ -1,15 +1,15 @@
 import React from "react"
 import "./rsvp.scss"
 import SectionTitle from "./section-title"
+import RSVPBody from "./rsvp-body"
 import { Particles } from "@blackbox-vision/react-particles"
 
 const RSVP = ({}) => {
   return (
     <div className="rsvp">
-      <div className="rsvp_centered">
-        <div className="rsvp_title">
-          <SectionTitle title="RSVP" />
-        </div>
+      <div className="rsvp_centered rsvp_contents">
+        <SectionTitle title="RSVP" />
+        <RSVPBody />
       </div>
       <div className="rsvp_centered">
         <Particles
