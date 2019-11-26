@@ -1,32 +1,62 @@
 import React from "react"
 import "./rsvp-body.scss"
-import { makeStyles } from "@material-ui/core/styles"
-import Radio from "@material-ui/core/Radio"
-import RadioGroup from "@material-ui/core/RadioGroup"
-import FormHelperText from "@material-ui/core/FormHelperText"
-import FormControlLabel from "@material-ui/core/FormControlLabel"
-import FormControl from "@material-ui/core/FormControl"
-import FormLabel from "@material-ui/core/FormLabel"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Button from "@material-ui/core/Button"
+import RSVPFormHeader from "./rsvp-form-header"
+import { useRSVPForm } from "../hooks/use-rsvp-form"
+import RSVPFormAttending from "./rsvp-form-attending"
+import RSVPFormGuest from "./rsvp-form-guest"
 
 const RSVPBody = ({}) => {
-  const [isAttending, setIsAttending] = React.useState()
+  const {
+    handleReset,
+    handleSubmit,
+    handleIsAttending,
+    handleGuest,
+    isAttending,
+    sliderRef,
+  } = useRSVPForm()
 
-  const handleChange = event => {
-    setIsAttending(event.target.value)
+  const settings = {
+    dots: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: 0,
+    fade: 1,
   }
 
   return (
     <div className="rsvp_body">
-      <FormLabel component="legend">Will you be attending?</FormLabel>
-      <RadioGroup
-        aria-label="attending"
-        name="attending"
-        value={isAttending}
-        onChange={handleChange}
-      >
-        <FormControlLabel value="yes" control={<Radio />} label="Yes" />
-        <FormControlLabel value="no" control={<Radio />} label="No" />
-      </RadioGroup>
+      <Slider {...settings} ref={sliderRef}>
+        <RSVPFormAttending
+          isAttending={isAttending}
+          handleIsAttending={handleIsAttending}
+        />
+
+        <RSVPFormHeader>It's alright, no worries!</RSVPFormHeader>
+
+        <RSVPFormGuest handleGuest={handleGuest} />
+
+        <h3>Are there any dietary restrictions we should know about?</h3>
+
+        <div>
+          <h3>5</h3>
+        </div>
+
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
+      <br />
+      <br />
+      <br />
+      <Button variant="outlined" onClick={handleSubmit}>
+        Submit
+      </Button>
+      <Button onClick={handleReset}>Reset</Button>
     </div>
   )
 }
