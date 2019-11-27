@@ -1,7 +1,5 @@
 import React from "react"
-import SectionTitle from "./section-title"
 import "./menu-body.scss"
-import Ampersand from "./ampersand"
 
 const MenuBody = () => {
   return (

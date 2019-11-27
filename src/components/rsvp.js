@@ -2,7 +2,7 @@ import React from "react"
 import "./rsvp.scss"
 import SectionTitle from "./section-title"
 import RSVPBody from "./rsvp-body"
-import { Particles } from "@blackbox-vision/react-particles"
+import Particles from "react-particles-js"
 
 const RSVP = ({}) => {
   return (
@@ -13,13 +13,12 @@ const RSVP = ({}) => {
       </div>
       <div className="rsvp_centered">
         <Particles
-          id="snow"
           width="auto"
           height="100vh"
           params={{
             particles: {
               number: {
-                value: 80,
+                value: 120,
                 density: {
                   enable: false,
                 },
