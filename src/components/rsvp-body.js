@@ -8,8 +8,11 @@ import RSVPFormHeader from "./rsvp-form-header"
 import { useRSVPForm } from "../hooks/use-rsvp-form"
 import RSVPFormAttending from "./rsvp-form-attending"
 import RSVPFormGuest from "./rsvp-form-guest"
+import { RSVPFormName } from "./rsvp-form-name";
+import { TreeDeck } from "./tree-deck";
+import { TreeDeckNode } from "./tree-deck-node";
 
-const RSVPBody = ({}) => {
+const RSVPBody = ({ }) => {
   const {
     handleReset,
     handleSubmit,
@@ -17,6 +20,10 @@ const RSVPBody = ({}) => {
     handleGuest,
     isAttending,
     sliderRef,
+    setFirstName,
+    setLastName,
+    firstName,
+    lastName
   } = useRSVPForm()
 
   const settings = {
@@ -30,6 +37,16 @@ const RSVPBody = ({}) => {
 
   return (
     <div className="rsvp_body">
+      <TreeDeck initialId="furst" onIdChange={(id) => console.log('ID changed!', id)}>
+        <TreeDeckNode id="furst" affirmId="affirmy" denyId="denyy" header="This is the first page" />
+        <TreeDeckNode id="affirmy" affirmId="furst" denyId="denyy" header="This is the second page" />
+        <TreeDeckNode id="denyy" affirmId="furst" denyId="denyy" header="This is the third page" />
+      </TreeDeck>
+      {/* <RSVPFormName
+        firstName={firstName}
+        lastName={lastName}
+        setFirstName={setFirstName}
+        setLastName={setLastName} />
       <Slider {...settings} ref={sliderRef}>
         <RSVPFormAttending
           isAttending={isAttending}
@@ -56,7 +73,7 @@ const RSVPBody = ({}) => {
       <Button variant="outlined" onClick={handleSubmit}>
         Submit
       </Button>
-      <Button onClick={handleReset}>Reset</Button>
+      <Button onClick={handleReset}>Reset</Button> */}
     </div>
   )
 }

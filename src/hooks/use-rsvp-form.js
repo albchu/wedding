@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react"
 
 export const useRSVPForm = () => {
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
   const [isAttending, setIsAttending] = useState("")
   const [guestName, setGuestName] = useState("")
   console.log("isAttending", isAttending)
@@ -44,5 +46,9 @@ export const useRSVPForm = () => {
     handleGuest,
     isAttending,
     sliderRef,
+    setFirstName,
+    setLastName,
+    firstName,
+    lastName
   }
 }
