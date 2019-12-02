@@ -26,3 +26,5 @@ export const TreeDeck = ({ onIdChange, children, initialId }) => {
 
 
 // How do you do transition?
+// You need to fade out previous component and fade in current
+// Look at react spring 
