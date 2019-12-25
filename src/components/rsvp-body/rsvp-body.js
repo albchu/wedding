@@ -6,25 +6,21 @@ import "slick-carousel/slick/slick-theme.css"
 import Button from "@material-ui/core/Button"
 import RSVPFormHeader from "./rsvp-form-header"
 import { useRSVPForm } from "../../hooks/use-rsvp-form"
-import { TreeDeck } from "../tree-deck";
+import { TreeDeck } from "./tree-deck";
 import { AttendingCard } from "./attending-card"
 import { NotAttendingCard } from "./not-attending-card"
 import { GuestCard } from "./guest-card"
-import { NameCard } from "./name-card"
 
 const RSVPBody = ({ }) => {
   const {
-    name,
-    onNameChange
+    form,
+    updateForm
   } = useRSVPForm()
+  console.log('current form', form)
 
   return (
     <div className="rsvp_body">
-      <TreeDeck initialId="NameCard">
-        <NameCard
-          name={name}
-          onNameChange={onNameChange}
-        />
+      <TreeDeck initialId="AttendingCard" updateForm={updateForm}>
         <AttendingCard />
         <NotAttendingCard />
         <GuestCard />

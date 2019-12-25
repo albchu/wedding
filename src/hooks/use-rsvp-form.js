@@ -1,17 +1,22 @@
 import React, { useState, useRef } from "react"
 
 export const useRSVPForm = () => {
-  const [name, setName] = useState("")
-  const onNameChange = event => {
-    setName(event.target.value);
-  }
+  const [form, setFormState] = useState({})
+
   // const [lastName, setLastName] = useState("")
   // const [isAttending, setIsAttending] = useState("")
   // const [guestName, setGuestName] = useState("")
 
+  const updateForm = (key, value) => {
+    setFormState(state =>
+      ({ ...state, [key]: value })
+    )
+  }
   return {
-    name,
-    onNameChange
+    form,
+    updateForm
+    // name,
+    // onNameChange
     // handleReset,
     // handleSubmit,
     // handleIsAttending,

@@ -9,7 +9,7 @@ import "./tree-deck.scss"
  * Props:
  * onIdChange: (id) => {...}
  */
-export const TreeDeck = ({ onIdChange, children, initialId }) => {
+export const TreeDeck = ({ onIdChange, children, initialId, updateForm }) => {
   const [currentId, setCurrentId] = useState(initialId)
   const [previousId, setPreviousId] = useState(null);
   const setNextCard = (newId) => {
@@ -20,7 +20,7 @@ export const TreeDeck = ({ onIdChange, children, initialId }) => {
   const currentComponent = useMemo(() => {
     const childToRender = Children.toArray(children).find(({ type }) => type.displayName === currentId)
 
-    return (cloneElement(childToRender, { setNextCard }))
+    return (cloneElement(childToRender, { setNextCard, updateForm }))
   }, [currentId])
 
   // const previousComponent = useMemo(() => {

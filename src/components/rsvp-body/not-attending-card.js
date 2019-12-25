@@ -6,10 +6,10 @@ export const NotAttendingCard = () => {
     <>
       <RSVPFormHeader>
         No worries!
-    </RSVPFormHeader>
+      </RSVPFormHeader>
       <RSVPFormHeader>
         Thanks for letting us know.
-    </RSVPFormHeader>
+      </RSVPFormHeader>
     </>
   )
 }
