@@ -1,8 +1,4 @@
 import React from "react"
-import "./rsvp-body.scss"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 import Button from "@material-ui/core/Button"
 import RSVPFormHeader from "./rsvp-form-header"
 import { useRSVPForm } from "../../hooks/use-rsvp-form"
