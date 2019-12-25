@@ -14,10 +14,10 @@
 .circle {
   height: 120px;
   width: 120px;
-
   border-radius: 50%;
   background-color: #f5faff;
   margin: 10px;
+  box-shadow: 3px 3px rgba(231, 229, 229, 0.5);
 }
 
 .circleButtonRow {
@@ -36,7 +36,8 @@
 
   // Address
   p:nth-child(2) {
-    font-size: 1.1em;
+    font-size: 1em;
+    font-style: italic;
   }
 
   .circle {
@@ -48,38 +49,30 @@
 }
 
 .address {
-  font-size: 0.9em;
+  font-size: 1em;
   p {
     line-height: 0.2em;
   }
 }
 
 .save_date {
-  font-size: 1.3em;
+  font-size: 1em;
   p {
     line-height: 0.2em;
   }
 }
 
 .date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100%;
-
-  .date_day {
-    font-size: 1.6em;
-    line-height: 0.9em;
-  }
-
-  .date_year {
-    font-size: 1em;
-  }
+  background-image: url("../images/cal_25_v1.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
 .schedule_title {
   padding-left: 1.5em;
+  padding-top: 1.5em;
   font-size: 1.3em;
   text-decoration: underline;
 }

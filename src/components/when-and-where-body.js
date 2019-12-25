@@ -7,7 +7,7 @@ const WhenAndWhereBody = () => {
       <div className="addCalendarMap">
         <div className="circleButtonRow">
           <div className="circle">
-            <div className="map" />
+          <a href={"https://goo.gl/maps/HRmshh33jHLiiVN29"}><div className="map" /></a>
           </div>
           <div className="address">
               <p>
@@ -30,21 +30,17 @@ const WhenAndWhereBody = () => {
         <div className="circleButtonRow">
           <div className="row">
             <div className="save_date">
-              Add to Calendar
+              <p>
+                July 25, 2020
+              </p>
+              <p>
+                Add to Calendar
+              </p>
             </div>
           </div>
           <div className="circle">
-            <div className="date">
-              <div className="date_month">
-                July
-              </div>
-              <div className="date_day">
-                25th
-               </div>
-              <div className="date_year">
-                2020
-              </div>
-            </div>
+          <a href={"https://calendar.google.com/event?action=TEMPLATE&tmeid=NzQxcHBkYmdsYXBwZmQ1bGcxOGwydTlkbWUgMWhlcGUzczJxZG81ODJxM245amk4aGJlcm9AZw&tmsrc=1hepe3s2qdo582q3n9ji8hbero%40group.calendar.google.com"}><div className="date" /></a>
+              <div className="date_day" />
           </div>
 
         </div>
