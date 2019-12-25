@@ -50,8 +50,8 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
         Will you be joining us on July 25th?
         </RSVPFormHeader>
       <RadioGroup
-        dwaria-label="guest"
-        name="guest"
+        aria-label="attending"
+        name="attending"
         value={radioValue}
         onChange={handleRadioClick}
       >

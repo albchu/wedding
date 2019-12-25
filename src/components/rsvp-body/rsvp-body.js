@@ -10,6 +10,9 @@ import { TreeDeck } from "./tree-deck";
 import { AttendingCard } from "./attending-card"
 import { NotAttendingCard } from "./not-attending-card"
 import { GuestCard } from "./guest-card"
+import { PlusOneCard } from "./plus-one-card"
+import { RestrictionsCard } from "./restrictions-card"
+import { ThankYouCard } from "./thank-you-card"
 
 const RSVPBody = ({ }) => {
   const {
@@ -24,6 +27,9 @@ const RSVPBody = ({ }) => {
         <AttendingCard />
         <NotAttendingCard />
         <GuestCard />
+        <PlusOneCard />
+        <RestrictionsCard />
+        <ThankYouCard form={form} />
       </TreeDeck>
     </div>
   )
