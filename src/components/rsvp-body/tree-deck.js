@@ -1,5 +1,4 @@
 import React, { Children, useEffect, useState, cloneElement } from 'react'
-import { Button, Fade } from "@material-ui/core"
 import "./tree-deck.scss"
 
 /**
@@ -18,8 +17,8 @@ export const TreeDeck = ({ onIdChange, children, initialId, updateForm }) => {
   }
 
   const getCurrentComponent = () => {
-    const childToRender = Children.toArray(children).find(({ type }) => type.displayName === currentId)
-    return cloneElement(childToRender, { setNextCard, updateForm })
+    const childToRender = Children.toArray(children).find(({ type }) => type.name === currentId)
+    return childToRender ? cloneElement(childToRender, { setNextCard, updateForm }) : null
   }
 
   return (

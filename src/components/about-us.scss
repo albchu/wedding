@@ -13,10 +13,10 @@
     "albertAvatar heart vickyAvatar"
     "albertName . vickyName"
     "albertDescription . vickyDescription";
-    // "albertAvatar albertDescription"
-    // "padding padding"
-    // "vickyName vickyAvatar"
-    // "vickyDescription vickyAvatar";
+  // "albertAvatar albertDescription"
+  // "padding padding"
+  // "vickyName vickyAvatar"
+  // "vickyDescription vickyAvatar";
   font-family: "Lato", sans-serif;
   height: 100%;
   margin-bottom: 5vh;
@@ -111,7 +111,7 @@
   // margin-right: -35px;
 }
 
-.heart{
+.heart {
   background-image: url("../images/heart.png");
   grid-area: heart;
   background-repeat: no-repeat;
