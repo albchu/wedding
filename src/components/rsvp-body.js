@@ -10,7 +10,9 @@ import RSVPFormAttending from "./rsvp-form-attending"
 import RSVPFormGuest from "./rsvp-form-guest"
 import { RSVPFormName } from "./rsvp-form-name";
 import { TreeDeck } from "./tree-deck";
-import { TreeDeckNode } from "./tree-deck-node";
+import { AttendingCard } from "./attending-card"
+import { NotAttendingCard } from "./not-attending-card"
+import { GuestCard } from "./guest-card"
 
 const RSVPBody = ({ }) => {
   const {
@@ -37,10 +39,10 @@ const RSVPBody = ({ }) => {
 
   return (
     <div className="rsvp_body">
-      <TreeDeck initialId="furst" onIdChange={(id) => console.log('ID changed!', id)}>
-        <TreeDeckNode id="furst" affirmId="affirmy" denyId="denyy" header="This is the first page" />
-        <TreeDeckNode id="affirmy" affirmId="furst" denyId="denyy" header="This is the second page" />
-        <TreeDeckNode id="denyy" affirmId="furst" denyId="denyy" header="This is the third page" />
+      <TreeDeck initialId="AttendingCard">
+        <AttendingCard />
+        <NotAttendingCard />
+        <GuestCard />
       </TreeDeck>
       {/* <RSVPFormName
         firstName={firstName}

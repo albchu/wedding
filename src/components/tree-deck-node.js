@@ -25,19 +25,19 @@ export const TreeDeckNode = ({
   denyLabel = "No",
   onDenyClick = noop,
   header,
-  setCurrentId
+  onChange
 }) => {
   const [formValue, setFormValue] = useState('')
 
-  const onChange = (event) => {
+  const handleChange = (event) => {
     const isYes = event.target.value === AFFIRM
 
     if (isYes) {
-      setCurrentId(affirmId);
+      onChange(affirmId);
       onAffirmClick(event);
     }
     else {
-      setCurrentId(denyId);
+      onChange(denyId);
       onDenyClick(event);
     }
 
@@ -53,7 +53,7 @@ export const TreeDeckNode = ({
         aria-label="guest"
         name="guest"
         value={formValue}
-        onChange={onChange}
+        onChange={handleChange}
       >
         <FormControlLabel value={AFFIRM} control={<Radio />} label={affirmLabel} />
         <FormControlLabel value={DENY} control={<Radio />} label={denyLabel} />
