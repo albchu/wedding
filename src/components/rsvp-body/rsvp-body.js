@@ -15,6 +15,7 @@ const RSVPBody = ({ }) => {
     form,
     updateForm
   } = useRSVPForm()
+
   console.log('current form', form)
 
   return (
