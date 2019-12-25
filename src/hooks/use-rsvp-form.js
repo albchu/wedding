@@ -1,54 +1,26 @@
 import React, { useState, useRef } from "react"
 
 export const useRSVPForm = () => {
-  const [firstName, setFirstName] = useState("")
-  const [lastName, setLastName] = useState("")
-  const [isAttending, setIsAttending] = useState("")
-  const [guestName, setGuestName] = useState("")
-  console.log("isAttending", isAttending)
-  const sliderRef = useRef()
-
-  const handleGuest = name => {
-    console.log("HANDLING")
-    const { slickGoTo } = sliderRef.current
-    setGuestName(name)
-    slickGoTo(4)
-    // Move to appropriate tab
+  const [name, setName] = useState("")
+  const onNameChange = event => {
+    setName(event.target.value);
   }
-
-  const handleIsAttending = event => {
-    const { slickGoTo } = sliderRef.current
-    const answer = event.target.value
-    setIsAttending(answer)
-    console.log("answer", answer)
-    if (answer === "no") {
-      slickGoTo(1)
-    } else {
-      slickGoTo(2)
-    }
-  }
-
-  const handleReset = () => {
-    const { slickGoTo } = sliderRef.current
-    slickGoTo(0)
-    setIsAttending("")
-  }
-
-  const handleSubmit = () => {
-    const { slickGoTo } = sliderRef.current
-    slickGoTo(3)
-  }
+  // const [lastName, setLastName] = useState("")
+  // const [isAttending, setIsAttending] = useState("")
+  // const [guestName, setGuestName] = useState("")
 
   return {
-    handleReset,
-    handleSubmit,
-    handleIsAttending,
-    handleGuest,
-    isAttending,
-    sliderRef,
-    setFirstName,
-    setLastName,
-    firstName,
-    lastName
+    name,
+    onNameChange
+    // handleReset,
+    // handleSubmit,
+    // handleIsAttending,
+    // handleGuest,
+    // isAttending,
+    // sliderRef,
+    // setFirstName,
+    // setLastName,
+    // firstName,
+    // lastName
   }
 }
