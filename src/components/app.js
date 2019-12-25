@@ -14,7 +14,7 @@ import Registry from "./registry";
 const App = () => {
   return (
     <div className="app">
-      {/* <SplashPage />
+      <SplashPage />
       <Announcement />
       <AboutUs />
       <WhenAndWhere />
@@ -22,7 +22,7 @@ const App = () => {
       <Menu />
       <MenuBody />
       <TravelAndAcommodation />
-      <Registry /> */}
+      <Registry />
       <RSVP />
     </div>
   )
