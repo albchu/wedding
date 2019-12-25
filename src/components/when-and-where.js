@@ -20,7 +20,7 @@ const WhenAndWhere = () => {
       </div>
       <div className="whenAndWhere_snow">
         <Particles
-          width="auto"
+          width="100vw"
           height="40vh"
           params={{
             particles: {

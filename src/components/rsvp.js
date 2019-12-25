@@ -13,7 +13,7 @@ const RSVP = ({ }) => {
       </div>
       <div className="rsvp_centered">
         <Particles
-          width="auto"
+          width="100vw"
           height="100vh"
           params={{
             particles: {

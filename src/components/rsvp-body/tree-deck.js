@@ -17,17 +17,16 @@ export const TreeDeck = ({ onIdChange, children, initialId, updateForm }) => {
     setCurrentId(newId);
   }
 
-  const currentComponent = () => {
+  const getCurrentComponent = () => {
     const childToRender = Children.toArray(children).find(({ type }) => type.displayName === currentId)
-
-    return (cloneElement(childToRender, { setNextCard, updateForm }))
+    return cloneElement(childToRender, { setNextCard, updateForm })
   }
 
   return (
     <div>
       <div className="treeDeck_container">
         <div className='treeDeck_card'>
-          {currentComponent}
+          {getCurrentComponent()}
         </div>
       </div>
     </div >
