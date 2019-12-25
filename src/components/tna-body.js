@@ -6,7 +6,38 @@ import Ampersand from "./ampersand";
 const TravelAndAcommodation = () => {
   return (
     <div className="tna-body">
-      this is the body. Wow... lOook at it
+      <div className="flight-Title">
+        <div className="flight-Circle"/>
+        <div className="tna-Title">
+          Flights
+        </div>
+      </div>
+      <div className="tna-Text">
+        <p>We suggest you come to Calgary by flight and land at the Calgary Int'l Airport (YYC). </p>
+      </div>
+      <div className="hotel-Title">
+        <div className="hotel-Circle"/>
+        <div className="tna-Title">
+          Hotel
+        </div>
+      </div>
+      <div className="tna-Text">
+        <p>For your comfort and convenience, we have made the following hotel arrangements. A limited number of rooms have been reserved at a special rate for this occasion. These rates are available for rooms staying from July 24th to 26th by mentioning the LAO-CHU wedding. For more information and room booking, please visit our link below: </p>
+        <br />
+        <a href={"https://book.passkey.com/go/LAOCHU0230"}><div className="tna-Link2">Click Here</div></a>
+      </div>
+      <div className="sightsee-Title">
+        <div className="sightsee-Circle"/>
+        <div className="tna-Title">
+          Sightseeing
+        </div>
+      </div>
+      <div className="tna-Text">
+        <p>We highly recommend you visiting Banff while you are in Calgary and we have put together a sample itinerary for your visit with hotel suggestions and car rental discount code: 
+        </p>
+        <br />
+        <a href={"https://book.passkey.com/go/LAOCHU0230"}><div className="tna-Link2">Click Here</div></a>
+    </div>
     </div>
   )
 }

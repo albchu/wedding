@@ -1,7 +1,7 @@
 .aboutUs_container {
   background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 14px;
 }
 
 .aboutUs {
@@ -9,14 +9,18 @@
   grid-template-columns: auto;
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
-    "albertAvatar albertName"
-    "albertAvatar albertDescription"
-    "padding padding"
-    "vickyName vickyAvatar"
-    "vickyDescription vickyAvatar";
+    "padding padding padding"
+    "albertAvatar heart vickyAvatar"
+    "albertName . vickyName"
+    "albertDescription . vickyDescription";
+    // "albertAvatar albertDescription"
+    // "padding padding"
+    // "vickyName vickyAvatar"
+    // "vickyDescription vickyAvatar";
   font-family: "Lato", sans-serif;
   height: 100%;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+  justify-content: space-between;
 }
 
 @mixin avatar {
@@ -24,20 +28,23 @@
 }
 
 @mixin textLeft {
-  padding-left: 10px;
+  padding-left: 14px;
 }
 
 @mixin description {
   font-family: "Nunito", sans-serif;
   font-size: 1em;
+  line-height: 1.1em;
   color: rgb(124, 124, 124);
-  p {
+  p:nth-child(2) {
     margin: 0px;
+    font-style: italic;
   }
 }
 
 @mixin name {
   font-family: "Roboto Slab", serif;
+  // white-space: nowrap;
   font-size: 2em;
   line-height: 1.2em;
   align-self: end;
@@ -61,14 +68,14 @@
   width: 145px;
   height: 213px;
   grid-area: albertAvatar;
-  justify-self: end;
+  // justify-self: end;
   background-image: url("../images/albert_avatar.png");
 }
 
 .vickyAvatar {
   @include avatar;
-  margin-top: 10px;
-  margin-left: 45px;
+  // margin-top: 10px;
+  // margin-left: 45px;
   width: 160px;
   height: 214px;
   grid-area: vickyAvatar;
@@ -76,28 +83,39 @@
 }
 
 .albertName {
-  @include textLeft;
+  // @include textLeft;
   @include name;
+  text-align: center;
   grid-area: albertName;
 }
 
 .albertDescription {
   @include description;
-  @include textLeft;
+  // @include textLeft;
+  text-align: center;
   grid-area: albertDescription;
 }
 
 .vickyName {
   @include name;
-  text-align: right;
+  text-align: center;
   grid-area: vickyName;
   color: #6e527a;
-  margin-right: -35px;
+  // margin-right: -35px;
 }
 
 .vickyDescription {
   @include description;
-  text-align: right;
+  text-align: center;
   grid-area: vickyDescription;
-  margin-right: -35px;
+  // margin-right: -35px;
+}
+
+.heart{
+  background-image: url("../images/heart.png");
+  grid-area: heart;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 45px;
+  background-position: center;
 }
