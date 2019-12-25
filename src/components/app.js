@@ -22,8 +22,8 @@ const App = () => {
       <Menu />
       <MenuBody />
       <TravelAndAcommodation />
-      <RSVP />
       <Registry />
+      <RSVP />
     </div>
   )
 }
