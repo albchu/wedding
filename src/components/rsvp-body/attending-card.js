@@ -5,14 +5,19 @@ import {
   Radio,
   FormControlLabel,
   TextField,
+  Typography,
 } from "@material-ui/core";
 import RSVPFormHeader from "./rsvp-form-header";
 
 export const AttendingCard = ({ setNextCard, updateForm }) => {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const [radioValue, setRadioValue] = useState("");
 
+  const handleEmailChange = event => {
+    setEmail(event.target.value);
+  };
   const handleNameChange = event => {
     setName(event.target.value);
   };
@@ -22,6 +27,7 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
 
   const handleNextAction = id => {
     updateForm("name", name);
+    updateForm("email", email);
     updateForm("attending", radioValue);
     setNextCard(id);
   };
@@ -41,13 +47,24 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
 
   return (
     <div>
-      <RSVPFormHeader>What is your name?</RSVPFormHeader>
+      <RSVPFormHeader>What is your full name?</RSVPFormHeader>
       <TextField
-        label="Name"
+        label="Full Name"
         margin="normal"
         variant="outlined"
         onChange={handleNameChange}
         value={name}
+      />
+      <br />
+      <br />
+      <RSVPFormHeader>What is your email address?</RSVPFormHeader>
+      <TextField
+        helperText=" We will only reach out to you if we absolutely need to"
+        label="Email"
+        margin="normal"
+        variant="outlined"
+        onChange={handleEmailChange}
+        value={email}
       />
       <br />
       <br />

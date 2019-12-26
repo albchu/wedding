@@ -27,9 +27,9 @@ export const PlusOneCard = ({ setNextCard, updateForm }) => {
 
   return (
     <div>
-      <RSVPFormHeader>What is the name of your guest?</RSVPFormHeader>
+      <RSVPFormHeader>What is the full name of your guest?</RSVPFormHeader>
       <TextField
-        label="Name"
+        label="Guest Full Name"
         margin="normal"
         variant="outlined"
         onChange={handleNameChange}
