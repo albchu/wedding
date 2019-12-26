@@ -1,6 +1,6 @@
 import React from "react";
 import SplashPage from "./components/spash-page";
-import "./components/app.scss";
+import "./App.scss";
 import AboutUs from "./components/about-us";
 import Announcement from "./components/announcement";
 import WhenAndWhere from "./components/when-and-where";
@@ -17,7 +17,7 @@ import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: "Nunito",
+    fontFamily: "'Roboto Slab', serif",
   },
 });
 

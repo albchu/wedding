@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import RSVPFormHeader from "./rsvp-form-header";
-import { useRSVPForm } from "../../hooks/use-rsvp-form";
+import { useRSVPForm } from "./use-rsvp-form";
 import { TreeDeck } from "./tree-deck";
 import { AttendingCard } from "./attending-card";
 import { NotAttendingCard } from "./not-attending-card";

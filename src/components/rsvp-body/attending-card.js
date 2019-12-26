@@ -5,11 +5,12 @@ import {
   Radio,
   FormControlLabel,
   TextField,
-  Typography,
 } from "@material-ui/core";
 import RSVPFormHeader from "./rsvp-form-header";
+import { useCardStyles } from "./use-card-styles";
 
 export const AttendingCard = ({ setNextCard, updateForm }) => {
+  const classes = useCardStyles();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -32,24 +33,12 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
     setNextCard(id);
   };
 
-  let buttonToRender = null;
-  if (name && radioValue === "yes") {
-    buttonToRender = (
-      <Button onClick={() => handleNextAction("GuestCard")}>Next</Button>
-    );
-  } else if (name && radioValue === "no") {
-    buttonToRender = (
-      <Button onClick={() => handleNextAction("NotAttendingCard")}>
-        Submit
-      </Button>
-    );
-  }
-
   return (
     <div>
       <RSVPFormHeader>What is your full name?</RSVPFormHeader>
       <TextField
-        label="Full Name"
+        className={classes.textfield}
+        label="Name"
         margin="normal"
         variant="outlined"
         onChange={handleNameChange}
@@ -59,7 +48,8 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
       <br />
       <RSVPFormHeader>What is your email address?</RSVPFormHeader>
       <TextField
-        helperText=" We will only reach out to you if we absolutely need to"
+        className={classes.textfield}
+        helperText=" We will only reach out if we absolutely need to contact you"
         label="Email"
         margin="normal"
         variant="outlined"
@@ -76,17 +66,29 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
         onChange={handleRadioClick}
       >
         <FormControlLabel
+          className={classes.text}
           value="yes"
           control={<Radio />}
           label="Yes! A thousand times yes!"
         />
         <FormControlLabel
+          className={classes.text}
           value="no"
           control={<Radio />}
           label="Can't make it out"
         />
       </RadioGroup>
-      {buttonToRender}
+      <Button
+        disabled={!name || !email || !radioValue}
+        onClick={() =>
+          handleNextAction(
+            radioValue === "no" ? "NotAttendingCard" : "GuestCard"
+          )
+        }
+        className={classes.actionButton}
+      >
+        {radioValue === "no" ? "Submit" : "Next"}
+      </Button>
     </div>
   );
 };

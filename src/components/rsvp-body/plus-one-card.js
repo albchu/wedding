@@ -7,8 +7,10 @@ import {
   FormControlLabel,
   TextField,
 } from "@material-ui/core";
+import { useCardStyles } from "./use-card-styles";
 
 export const PlusOneCard = ({ setNextCard, updateForm }) => {
+  const classes = useCardStyles();
   const [entree, setEntree] = useState("");
   const [name, setName] = useState("");
 
@@ -29,6 +31,7 @@ export const PlusOneCard = ({ setNextCard, updateForm }) => {
     <div>
       <RSVPFormHeader>What is the full name of your guest?</RSVPFormHeader>
       <TextField
+        className={classes.textfield}
         label="Guest Full Name"
         margin="normal"
         variant="outlined"
@@ -40,18 +43,29 @@ export const PlusOneCard = ({ setNextCard, updateForm }) => {
       <RSVPFormHeader>Please choose your guest's entree</RSVPFormHeader>
       <RadioGroup value={entree} onChange={handleEntreeClick}>
         <FormControlLabel
+          className={classes.text}
           value="filetMignon"
           control={<Radio />}
           label="Filet Mignon"
         />
         <FormControlLabel
+          className={classes.text}
           value="lambRack"
           control={<Radio />}
           label="Lamb Rack"
         />
-        <FormControlLabel value="salmon" control={<Radio />} label="Salmon" />
+        <FormControlLabel
+          className={classes.text}
+          value="salmon"
+          control={<Radio />}
+          label="Salmon"
+        />
       </RadioGroup>
-      <Button disabled={!name || !entree} onClick={handleNextAction}>
+      <Button
+        disabled={!name || !entree}
+        onClick={handleNextAction}
+        className={classes.actionButton}
+      >
         Next
       </Button>
     </div>
