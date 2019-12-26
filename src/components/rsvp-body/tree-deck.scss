@@ -1,8 +1,11 @@
 .treeDeck_container {
-  position: relative;
 }
 
 .treeDeck_card {
-  position: absolute;
-  top: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.fadeLeft {
+  transform: translateX(100vw);
+  opacity: 0;
 }

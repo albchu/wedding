@@ -15,11 +15,16 @@ export const TreeDeck = ({
   updateForm,
   form,
 }) => {
+  const [className, setClassName] = useState("");
   const [currentId, setCurrentId] = useState(initialId);
   const [previousId, setPreviousId] = useState(null);
   const setNextCard = newId => {
-    setPreviousId(currentId);
-    setCurrentId(newId);
+    setClassName("fadeLeft");
+    setTimeout(() => {
+      setClassName("");
+      setPreviousId(currentId);
+      setCurrentId(newId);
+    }, 200);
   };
 
   const getCurrentComponent = () => {
@@ -39,7 +44,9 @@ export const TreeDeck = ({
   return (
     <div>
       <div className="treeDeck_container">
-        <div className="treeDeck_card">{getCurrentComponent()}</div>
+        <div className={`treeDeck_card ${className}`}>
+          {getCurrentComponent()}
+        </div>
       </div>
     </div>
   );
