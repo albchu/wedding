@@ -9,10 +9,10 @@ import {
 } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
-export const PlusOneCard = ({ setNextCard, updateForm, previousId }) => {
+export const PlusOneCard = ({ setNextCard, updateForm, previousId, form }) => {
   const classes = useCardStyles();
-  const [entree, setEntree] = useState("");
-  const [name, setName] = useState("");
+  const [entree, setEntree] = useState(form.plusOneEntree);
+  const [name, setName] = useState(form.plusOneName);
 
   const handleNameChange = event => {
     setName(event.target.value);
@@ -28,7 +28,7 @@ export const PlusOneCard = ({ setNextCard, updateForm, previousId }) => {
   };
 
   const handlePreviousAction = () => {
-    setNextCard(previousId);
+    setNextCard("GuestCard");
   };
 
   return (

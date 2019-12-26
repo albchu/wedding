@@ -13,13 +13,13 @@ const RSVPBody = ({}) => {
 
   return (
     <div className="rsvp_body">
-      <TreeDeck initialId="AttendingCard" updateForm={updateForm}>
+      <TreeDeck initialId="AttendingCard" updateForm={updateForm} form={form}>
         <AttendingCard id="AttendingCard" />
-        <NotAttendingCard id="NotAttendingCard" form={form} />
+        <NotAttendingCard id="NotAttendingCard" />
         <GuestCard id="GuestCard" />
         <PlusOneCard id="PlusOneCard" />
         <RestrictionsCard id="RestrictionsCard" />
-        <ThankYouCard form={form} id="ThankYouCard" />
+        <ThankYouCard id="ThankYouCard" />
       </TreeDeck>
     </div>
   );

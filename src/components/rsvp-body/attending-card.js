@@ -9,12 +9,11 @@ import {
 import RSVPFormHeader from "./rsvp-form-header";
 import { useCardStyles } from "./use-card-styles";
 
-export const AttendingCard = ({ setNextCard, updateForm }) => {
+export const AttendingCard = ({ setNextCard, updateForm, form }) => {
   const classes = useCardStyles();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-
-  const [radioValue, setRadioValue] = useState("");
+  const [name, setName] = useState(form.name);
+  const [email, setEmail] = useState(form.email);
+  const [radioValue, setRadioValue] = useState(form.attending);
 
   const handleEmailChange = event => {
     setEmail(event.target.value);
