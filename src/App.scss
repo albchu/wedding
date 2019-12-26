@@ -9,3 +9,11 @@ body {
   color: $primary-color;
   background-color: $bg-color;
 }
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(100vw, 1400px);
+  grid-template-rows: 96vh repeat(10, auto);
+  justify-content: center;
+  align-items: center;
+}
