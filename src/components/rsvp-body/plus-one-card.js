@@ -1,23 +1,29 @@
-import React, { useState } from 'react'
-import RSVPFormHeader from './rsvp-form-header'
-import { Button, RadioGroup, Radio, FormControlLabel, TextField } from "@material-ui/core"
+import React, { useState } from "react";
+import RSVPFormHeader from "./rsvp-form-header";
+import {
+  Button,
+  RadioGroup,
+  Radio,
+  FormControlLabel,
+  TextField,
+} from "@material-ui/core";
 
 export const PlusOneCard = ({ setNextCard, updateForm }) => {
-  const [entree, setEntree] = useState('')
-  const [name, setName] = useState('')
+  const [entree, setEntree] = useState("");
+  const [name, setName] = useState("");
 
   const handleNameChange = event => {
     setName(event.target.value);
-  }
-  const handleEntreeClick = (event) => {
-    setEntree(event.target.value)
-  }
+  };
+  const handleEntreeClick = event => {
+    setEntree(event.target.value);
+  };
 
   const handleNextAction = () => {
-    updateForm('plusOneEntree', entree);
-    updateForm('plusOneName', name);
-    setNextCard("RestrictionsCard")
-  }
+    updateForm("plusOneEntree", entree);
+    updateForm("plusOneName", name);
+    setNextCard("RestrictionsCard");
+  };
 
   return (
     <div>
@@ -32,15 +38,22 @@ export const PlusOneCard = ({ setNextCard, updateForm }) => {
       <br />
       <br />
       <RSVPFormHeader>Please choose your guest's entree</RSVPFormHeader>
-      <RadioGroup
-        value={entree}
-        onChange={handleEntreeClick}
-      >
-        <FormControlLabel value="filetMignon" control={<Radio />} label="Filet Mignon" />
-        <FormControlLabel value="lambRack" control={<Radio />} label="Lamb Rack" />
+      <RadioGroup value={entree} onChange={handleEntreeClick}>
+        <FormControlLabel
+          value="filetMignon"
+          control={<Radio />}
+          label="Filet Mignon"
+        />
+        <FormControlLabel
+          value="lambRack"
+          control={<Radio />}
+          label="Lamb Rack"
+        />
         <FormControlLabel value="salmon" control={<Radio />} label="Salmon" />
       </RadioGroup>
-      <Button disabled={!name || !entree} onClick={handleNextAction}>Next</Button>
+      <Button disabled={!name || !entree} onClick={handleNextAction}>
+        Next
+      </Button>
     </div>
-  )
-}
+  );
+};
