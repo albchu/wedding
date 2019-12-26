@@ -16,7 +16,8 @@
 .flight-Circle {
   height: 60px;
   width: 60px;
-  margin: 10px;
+  margin-top:10px;
+  margin-left: 10px;
   grid-area: flightCircle;
   background-image: url("../images/flight.png");
   background-position: center;
@@ -53,7 +54,8 @@
 .hotel-Circle {
   height: 60px;
   width: 60px;
-  margin: 10px;
+  margin-top:10px;
+  margin-left: 10px;
   grid-area: hotelCircle;
   background-image: url("../images/hotel.png");
   background-position: center;
@@ -84,7 +86,8 @@
 .sightsee-Circle {
   height: 60px;
   width: 60px;
-  margin: 10px;
+  margin-top:10px;
+  margin-left: 10px;
   grid-area: sightseeCircle;
   background-image: url("../images/sightsee.png");
   background-position: center;
