@@ -21,12 +21,12 @@ const RSVPBody = ({ }) => {
   return (
     <div className="rsvp_body">
       <TreeDeck initialId="AttendingCard" updateForm={updateForm}>
-        <AttendingCard />
-        <NotAttendingCard />
-        <GuestCard />
-        <PlusOneCard />
-        <RestrictionsCard />
-        <ThankYouCard form={form} />
+        <AttendingCard id="AttendingCard" />
+        <NotAttendingCard id="NotAttendingCard" />
+        <GuestCard id="GuestCard" />
+        <PlusOneCard id="PlusOneCard" />
+        <RestrictionsCard id="RestrictionsCard" />
+        <ThankYouCard form={form} id="ThankYouCard" />
       </TreeDeck>
     </div>
   )

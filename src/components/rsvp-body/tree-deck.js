@@ -17,7 +17,7 @@ export const TreeDeck = ({ onIdChange, children, initialId, updateForm }) => {
   }
 
   const getCurrentComponent = () => {
-    const childToRender = Children.toArray(children).find(({ type }) => type.name === currentId)
+    const childToRender = Children.toArray(children).find(({ props }) => props.id === currentId)
     return childToRender ? cloneElement(childToRender, { setNextCard, updateForm }) : null
   }
 
