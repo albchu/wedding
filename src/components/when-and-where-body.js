@@ -39,7 +39,7 @@ const WhenAndWhereBody = () => {
             </div>
           </div>
           <div className="circle">
-          <a href={"https://calendar.google.com/event?action=TEMPLATE&tmeid=NzQxcHBkYmdsYXBwZmQ1bGcxOGwydTlkbWUgMWhlcGUzczJxZG81ODJxM245amk4aGJlcm9AZw&tmsrc=1hepe3s2qdo582q3n9ji8hbero%40group.calendar.google.com"}><div className="date" /></a>
+          <a href={"https://www.google.com/calendar/render?action=TEMPLATE&text=Vicky+and+Albert+Wedding&dates=20200725T140000/20200726T010000&details=Party+it+dup+with+Vicky+and+Albert+on+their+friggin+wedding+day!+For+details,+visit+link+here:+http://www.ilaochu.ca&location=Hotel+Fairmont+Palliser,+133+9+Ave+SW,+Calgary,+AB+T2P+2M3,+Canada&sf=true&output=xml"}><div className="date" /></a>
               <div className="date_day" />
           </div>
 
