@@ -3,7 +3,7 @@ import RSVPFormHeader from "./rsvp-form-header";
 import { Button, RadioGroup, Radio, FormControlLabel } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
-export const GuestCard = ({ setNextCard, updateForm }) => {
+export const GuestCard = ({ setNextCard, updateForm, previousId }) => {
   const classes = useCardStyles();
   const [entree, setEntree] = useState("");
   const [radioValue, setRadioValue] = useState("");
@@ -20,6 +20,10 @@ export const GuestCard = ({ setNextCard, updateForm }) => {
     updateForm("entree", entree);
     updateForm("plusOne", radioValue);
     setNextCard(radioValue === "yes" ? "PlusOneCard" : "RestrictionsCard");
+  };
+
+  const handlePreviousAction = () => {
+    setNextCard(previousId);
   };
 
   return (
@@ -62,6 +66,10 @@ export const GuestCard = ({ setNextCard, updateForm }) => {
           label="No"
         />
       </RadioGroup>
+
+      <Button onClick={handlePreviousAction} className={classes.prevButton}>
+        Previous
+      </Button>
 
       <Button
         disabled={!entree || !radioValue}

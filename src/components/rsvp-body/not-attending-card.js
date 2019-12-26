@@ -1,15 +1,14 @@
-import React from 'react'
-import RSVPFormHeader from './rsvp-form-header'
+import React from "react";
+import RSVPFormHeader from "./rsvp-form-header";
+import capitalize from "lodash/capitalize";
 
-export const NotAttendingCard = () => {
+export const NotAttendingCard = ({ form }) => {
   return (
     <>
       <RSVPFormHeader>
-        No worries!
+        {`No worries ${capitalize(form.name.split(" ")[0])}!`}
       </RSVPFormHeader>
-      <RSVPFormHeader>
-        Thanks for letting us know.
-      </RSVPFormHeader>
+      <RSVPFormHeader>Thanks for letting us know.</RSVPFormHeader>
     </>
-  )
-}
+  );
+};

@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
-export const PlusOneCard = ({ setNextCard, updateForm }) => {
+export const PlusOneCard = ({ setNextCard, updateForm, previousId }) => {
   const classes = useCardStyles();
   const [entree, setEntree] = useState("");
   const [name, setName] = useState("");
@@ -25,6 +25,10 @@ export const PlusOneCard = ({ setNextCard, updateForm }) => {
     updateForm("plusOneEntree", entree);
     updateForm("plusOneName", name);
     setNextCard("RestrictionsCard");
+  };
+
+  const handlePreviousAction = () => {
+    setNextCard(previousId);
   };
 
   return (
@@ -61,6 +65,11 @@ export const PlusOneCard = ({ setNextCard, updateForm }) => {
           label="Salmon"
         />
       </RadioGroup>
+
+      <Button onClick={handlePreviousAction} className={classes.prevButton}>
+        Previous
+      </Button>
+
       <Button
         disabled={!name || !entree}
         onClick={handleNextAction}

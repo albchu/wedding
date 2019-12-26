@@ -79,7 +79,7 @@ export const AttendingCard = ({ setNextCard, updateForm }) => {
         />
       </RadioGroup>
       <Button
-        disabled={!name || !email || !radioValue}
+        disabled={!name || !radioValue}
         onClick={() =>
           handleNextAction(
             radioValue === "no" ? "NotAttendingCard" : "GuestCard"

@@ -3,7 +3,7 @@ import RSVPFormHeader from "./rsvp-form-header";
 import { Button, TextField } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
-export const RestrictionsCard = ({ setNextCard, updateForm }) => {
+export const RestrictionsCard = ({ setNextCard, updateForm, previousId }) => {
   const classes = useCardStyles();
   const [restrictions, setRestrictions] = useState("");
 
@@ -14,6 +14,10 @@ export const RestrictionsCard = ({ setNextCard, updateForm }) => {
   const handleSubmit = () => {
     updateForm("dietaryRestrictions", restrictions);
     setNextCard("ThankYouCard");
+  };
+
+  const handlePreviousAction = () => {
+    setNextCard(previousId);
   };
 
   return (
@@ -31,6 +35,11 @@ export const RestrictionsCard = ({ setNextCard, updateForm }) => {
         fullWidth
         multiline
       />
+
+      <Button onClick={handlePreviousAction} className={classes.prevButton}>
+        Previous
+      </Button>
+
       <Button onClick={handleSubmit} className={classes.actionButton}>
         Submit
       </Button>

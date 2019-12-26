@@ -17,10 +17,19 @@ export const useCardStyles = makeStyles({
     borderStyle: "solid",
     borderWidth: 1,
     marginTop: "2em",
+    fontWeight: 700,
+  },
+  prevButton: {
+    "& span": {
+      color: "#e3e3e3",
+    },
+    marginTop: "2em",
+    marginRight: "1em",
+    fontWeight: 700,
   },
   text: {
     color: "white",
-    textShadow: "1px 1px 12px rgba(0,0,0,0.3)",
+    textShadow: "1px 1px 12px rgba(0,0,0,0.4)",
     "& .MuiIconButton-label": {
       color: "#e3e3e3",
     },

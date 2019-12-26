@@ -1,5 +1,5 @@
-import React, { Children, useEffect, useState, cloneElement } from 'react'
-import "./tree-deck.scss"
+import React, { Children, useEffect, useState, cloneElement } from "react";
+import "./tree-deck.scss";
 
 /**
  * Always renders one node component on top at a time
@@ -9,25 +9,27 @@ import "./tree-deck.scss"
  * onIdChange: (id) => {...}
  */
 export const TreeDeck = ({ onIdChange, children, initialId, updateForm }) => {
-  const [currentId, setCurrentId] = useState(initialId)
+  const [currentId, setCurrentId] = useState(initialId);
   const [previousId, setPreviousId] = useState(null);
-  const setNextCard = (newId) => {
+  const setNextCard = newId => {
     setPreviousId(currentId);
     setCurrentId(newId);
-  }
+  };
 
   const getCurrentComponent = () => {
-    const childToRender = Children.toArray(children).find(({ props }) => props.id === currentId)
-    return childToRender ? cloneElement(childToRender, { setNextCard, updateForm }) : null
-  }
+    const childToRender = Children.toArray(children).find(
+      ({ props }) => props.id === currentId
+    );
+    return childToRender
+      ? cloneElement(childToRender, { setNextCard, updateForm, previousId })
+      : null;
+  };
 
   return (
     <div>
       <div className="treeDeck_container">
-        <div className='treeDeck_card'>
-          {getCurrentComponent()}
-        </div>
+        <div className="treeDeck_card">{getCurrentComponent()}</div>
       </div>
-    </div >
-  )
-}
+    </div>
+  );
+};
