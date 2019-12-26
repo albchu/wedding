@@ -1,35 +1,32 @@
-import React from "react"
-import Button from "@material-ui/core/Button"
-import RSVPFormHeader from "./rsvp-form-header"
-import { useRSVPForm } from "../../hooks/use-rsvp-form"
+import React from "react";
+import Button from "@material-ui/core/Button";
+import RSVPFormHeader from "./rsvp-form-header";
+import { useRSVPForm } from "../../hooks/use-rsvp-form";
 import { TreeDeck } from "./tree-deck";
-import { AttendingCard } from "./attending-card"
-import { NotAttendingCard } from "./not-attending-card"
-import { GuestCard } from "./guest-card"
-import { PlusOneCard } from "./plus-one-card"
-import { RestrictionsCard } from "./restrictions-card"
-import { ThankYouCard } from "./thank-you-card"
+import { AttendingCard } from "./attending-card";
+import { NotAttendingCard } from "./not-attending-card";
+import { GuestCard } from "./guest-card";
+import { PlusOneCard } from "./plus-one-card";
+import { RestrictionsCard } from "./restrictions-card";
+import { ThankYouCard } from "./thank-you-card";
 
-const RSVPBody = ({ }) => {
-  const {
-    form,
-    updateForm
-  } = useRSVPForm()
+const RSVPBody = ({}) => {
+  const { form, updateForm } = useRSVPForm();
 
-  console.log('current form', form)
+  console.log("current form", form);
 
   return (
     <div className="rsvp_body">
       <TreeDeck initialId="AttendingCard" updateForm={updateForm}>
-        <AttendingCard />
-        <NotAttendingCard />
-        <GuestCard />
-        <PlusOneCard />
-        <RestrictionsCard />
-        <ThankYouCard form={form} />
+        <AttendingCard id="AttendingCard" />
+        <NotAttendingCard id="NotAttendingCard" />
+        <GuestCard id="GuestCard" />
+        <PlusOneCard id="PlusOneCard" />
+        <RestrictionsCard id="RestrictionsCard" />
+        <ThankYouCard form={form} id="ThankYouCard" />
       </TreeDeck>
     </div>
-  )
-}
+  );
+};
 
-export default RSVPBody
+export default RSVPBody;
