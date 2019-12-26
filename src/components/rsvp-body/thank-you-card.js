@@ -9,6 +9,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import { Typography } from "@material-ui/core";
 
 export const ThankYouCard = ({ form }) => {
   const guestName = form.name.split(" ")[0];
@@ -20,15 +21,12 @@ export const ThankYouCard = ({ form }) => {
       <RSVPFormHeader>{`We can't wait to celebrate with you and ${plusOneName} at the Fairmont Palliser on July 25th 2020.`}</RSVPFormHeader>
       <br />
       <br />
-      <RSVPFormHeader>
+      <Typography>
         If you have any questions, please don't hesitate to reach out to us
         directly or through email at albertchu539@gmail.com or
         vickywklao@gmail.com
-      </RSVPFormHeader>
+      </Typography>
       <br />
-      <br />
-      <br />
-      <RSVPFormHeader>Dev Dump</RSVPFormHeader>
       <TableContainer component={Paper} style={{ marginLeft: -10 }}>
         <Table aria-label="simple table">
           <TableHead>
