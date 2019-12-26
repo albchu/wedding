@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  font-family: "Roboto Slab", serif;
 }
 
 .flight-Title {
@@ -46,6 +47,7 @@
 .hotel-Title {
   display: grid;
   grid-template-rows: auto;
+  margin-top:10px;
   grid-template-columns: auto 2fr;
   grid-template-areas: "hotelCircle tnaTitle";
   grid-column-gap: 15px;
@@ -55,7 +57,6 @@
 .hotel-Circle {
   height: 60px;
   width: 60px;
-  margin-top:10px;
   margin-left: 10px;
   grid-area: hotelCircle;
   background-image: url("../images/hotel.png");
@@ -81,18 +82,22 @@
   grid-template-columns: auto 2fr;
   grid-template-areas: "sightseeCircle tnaTitle";
   grid-column-gap: 15px;
+  margin-top: 28px;
   align-items: center;
 }
 
 .sightsee-Circle {
   height: 60px;
   width: 60px;
-  margin-top:10px;
   margin-left: 10px;
   grid-area: sightseeCircle;
   background-image: url("../images/sightsee.png");
   background-position: center;
   background-size: 120%;
+}
+
+.tna-padding{
+  padding: 0.3em;
 }
 
 
