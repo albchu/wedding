@@ -36,7 +36,7 @@ const TravelAndAcommodation = () => {
         <p>We highly recommend you visiting Banff while you are in Calgary and we have put together a sample itinerary for your visit with hotel suggestions and car rental discount code: 
         </p>
         <br />
-        <a href={"https://book.passkey.com/go/LAOCHU0230"}><div className="tna-Link2">Click Here</div></a>
+        <a href={"https://docs.google.com/spreadsheets/d/1vZ_-HG4DxodcUXp7cW7415PqLHFW9Zt4iUI2e_1NLbU/edit?usp=sharing"}><div className="tna-Link2">Click Here</div></a>
     </div>
     </div>
   )
