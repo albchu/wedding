@@ -11,8 +11,6 @@ import { ThankYouCard } from "./thank-you-card";
 const RSVPBody = ({}) => {
   const { form, updateForm } = useRSVPForm();
 
-  console.log("current form", form);
-
   return (
     <div className="rsvp_body">
       <TreeDeck initialId="AttendingCard" updateForm={updateForm}>
