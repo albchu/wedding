@@ -22,7 +22,7 @@ const TravelAndAcommodation = () => {
         </div>
       </div>
       <div className="tna-Text">
-        <p>For your comfort and convenience, we have made the following hotel arrangements. A limited number of rooms have been reserved at a special rate for this occasion. These rates are available for rooms staying from July 24th to 26th by mentioning the LAO-CHU wedding. For more information and room booking, please visit our link below: </p>
+        <p>For your comfort and convenience, we have made an arrangement with the hotel to reserve a limited number of rooms at a special rate for this occasion. These rates are available for rooms staying from July 24th to 26th by mentioning the LAO-CHU wedding. For more information and room booking, please visit our link below: </p>
         <br />
         <a href={"https://book.passkey.com/go/LAOCHU0230"}><div className="tna-Link2">Click Here</div></a>
       </div>
