@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import RSVPFormHeader from "./rsvp-form-header";
 import capitalize from "lodash/capitalize";
-import map from "lodash/map";
 import random from "lodash/random";
 import { Typography } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 import { usePostRsvp } from "./use-post-rsvp";
+import { ToastContainer } from "react-toastify";
 
 const INTRO_MESSAGES = guestName => [
   `Fantastic! You're confirmed ${guestName}. Thanks for RSVPing.`,
@@ -37,6 +37,7 @@ export const ThankYouCard = ({ form }) => {
 
   return (
     <div>
+      <ToastContainer />
       <RSVPFormHeader>{getRandomIntro(form.name)}</RSVPFormHeader>
       <br />
       <RSVPFormHeader>{getThanks(form.plusOneName)}</RSVPFormHeader>
