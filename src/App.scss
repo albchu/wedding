@@ -12,8 +12,11 @@ body {
 
 .app {
   display: grid;
-  grid-template-columns: minmax(100vw, 1400px);
-  grid-template-rows: 96vh repeat(10, auto);
+  grid-template-columns: minmax(auto, 1024px);
+  grid-template-rows:
+    96vh auto auto auto auto auto minmax(480px, auto) minmax(820px, auto)
+    auto auto;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }

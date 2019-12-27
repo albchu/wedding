@@ -2,11 +2,12 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-color: white;
-  background-position: center top;
+  background-position: right top;
   background-image: url("../images/far_beach.jpg");
   // albert remember this
   box-shadow: inset 0 0 0 100vw rgba(88, 87, 74, 0.35);
   height: 100vh;
+  min-height: 820px;
   padding-top: 2vh;
   padding-left: 6vw;
 }
