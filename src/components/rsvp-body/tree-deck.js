@@ -24,7 +24,7 @@ export const TreeDeck = ({
       setClassName("");
       setPreviousId(currentId);
       setCurrentId(newId);
-    }, 200);
+    }, 250);
   };
 
   const getCurrentComponent = () => {
