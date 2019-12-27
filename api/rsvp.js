@@ -50,7 +50,13 @@ const appendGoogleSheet = async ({
 };
 
 export default async (req, res) => {
-  if (req.method !== "POST") res.status(404).send("Only accept POST requests");
+  if (req.method !== "POST") {
+    res.status(404).send("Only accept POST requests");
+  }
+
+  if (!req.body) {
+    res.status(404).send("Missing body");
+  }
 
   const response = await appendGoogleSheet(req.body);
 
