@@ -1,11 +1,8 @@
 {
   "version": 2,
   "name": "wedding",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": { "distDir": "build" }
-    }
-  ]
+  "env": {
+    "CLIENT_EMAIL": "@client-email",
+    "PRIVATE_KEY": "@private-key"
+  }
 }
