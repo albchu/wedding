@@ -25,6 +25,6 @@ const requestAndNotify = async form => {
 
 export const usePostRsvp = form => {
   useEffect(() => {
-    requestAndNotify();
+    requestAndNotify(form);
   }, [form]);
 };
