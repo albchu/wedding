@@ -7,13 +7,15 @@ import { GuestCard } from "./guest-card";
 import { PlusOneCard } from "./plus-one-card";
 import { RestrictionsCard } from "./restrictions-card";
 import { ThankYouCard } from "./thank-you-card";
+import { PasswordCard } from "./password-card";
 
-const RSVPBody = ({}) => {
+const RSVPBody = () => {
   const { form, updateForm } = useRSVPForm();
 
   return (
     <div className="rsvp_body">
-      <TreeDeck initialId="AttendingCard" updateForm={updateForm} form={form}>
+      <TreeDeck initialId="PasswordCard" updateForm={updateForm} form={form}>
+        <PasswordCard id="PasswordCard" />
         <AttendingCard id="AttendingCard" />
         <NotAttendingCard id="NotAttendingCard" />
         <GuestCard id="GuestCard" />

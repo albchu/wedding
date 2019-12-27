@@ -12,5 +12,11 @@
 }
 
 .splashPage__logo {
+  transition: all 1s ease-in-out;
   padding-top: 25%;
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
 }

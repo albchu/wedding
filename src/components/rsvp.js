@@ -1,10 +1,10 @@
-import React from "react"
-import "./rsvp.scss"
-import SectionTitle from "./section-title"
-import RSVPBody from "./rsvp-body"
-import Particles from "react-particles-js"
+import React from "react";
+import "./rsvp.scss";
+import SectionTitle from "./section-title";
+import RSVPBody from "./rsvp-body";
+import Particles from "react-particles-js";
 
-const RSVP = ({ }) => {
+const RSVP = () => {
   return (
     <div className="rsvp">
       <div className="rsvp_centered rsvp_contents">
@@ -40,7 +40,7 @@ const RSVP = ({ }) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RSVP
+export default RSVP;

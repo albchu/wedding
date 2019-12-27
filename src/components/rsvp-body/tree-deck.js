@@ -1,4 +1,4 @@
-import React, { Children, useEffect, useState, cloneElement } from "react";
+import React, { Children, useState, cloneElement } from "react";
 import "./tree-deck.scss";
 
 /**
@@ -24,7 +24,7 @@ export const TreeDeck = ({
       setClassName("");
       setPreviousId(currentId);
       setCurrentId(newId);
-    }, 200);
+    }, 250);
   };
 
   const getCurrentComponent = () => {

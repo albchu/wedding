@@ -17,7 +17,7 @@
 .flight-Circle {
   height: 60px;
   width: 60px;
-  margin-top:10px;
+  margin-top: 10px;
   margin-left: 10px;
   grid-area: flightCircle;
   background-image: url("../images/flight.png");
@@ -38,7 +38,7 @@
   font-size: 0.95em;
   margin-left: 13px;
   margin-right: 20px;
-  p{
+  p {
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -47,7 +47,7 @@
 .hotel-Title {
   display: grid;
   grid-template-rows: auto;
-  margin-top:10px;
+  margin-top: 10px;
   grid-template-columns: auto 2fr;
   grid-template-areas: "hotelCircle tnaTitle";
   grid-column-gap: 15px;
@@ -67,13 +67,18 @@
 .tna-Link {
   color: blue;
   text-shadow: 2px 2px 2px rgb(97, 97, 97);
-  font-size: 1.0em;
+  font-size: 1em;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .tna-Link2 {
-  color: yellow;
+  color: rgb(253, 253, 110);
   text-shadow: 2px 2px 3px black;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 .sightsee-Title {
@@ -96,8 +101,6 @@
   background-size: 120%;
 }
 
-.tna-padding{
+.tna-padding {
   padding: 0.3em;
 }
-
-

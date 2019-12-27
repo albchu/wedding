@@ -1,12 +1,12 @@
-import React from 'react'
-import "./travel-and-acommodation.scss"
-import SectionTitle from './section-title';
+import React from "react";
+import "./travel-and-acommodation.scss";
+import SectionTitle from "./section-title";
 import Ampersand from "./ampersand";
-import TravelAndAcommodationBody from './tna-body'
+import TravelAndAcommodationBody from "./tna-body";
 
-const TravelAndAcommodation = ({ }) => {
+const TravelAndAcommodation = () => {
   return (
-    <div className="tna" >
+    <div className="tna">
       <div className="tna-title">
         <div className="travelAnd">
           <div className="travel">
@@ -22,7 +22,7 @@ const TravelAndAcommodation = ({ }) => {
       </div>
       <TravelAndAcommodationBody />
     </div>
-  )
-}
+  );
+};
 
-export default TravelAndAcommodation
+export default TravelAndAcommodation;
