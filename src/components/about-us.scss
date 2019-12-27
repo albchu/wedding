@@ -13,14 +13,11 @@
     "albertAvatar heart vickyAvatar"
     "albertName . vickyName"
     "albertDescription . vickyDescription";
-  // "albertAvatar albertDescription"
-  // "padding padding"
-  // "vickyName vickyAvatar"
-  // "vickyDescription vickyAvatar";
   font-family: "Lato", sans-serif;
   height: 100%;
   margin-bottom: 5vh;
   justify-content: space-between;
+  justify-items: center;
 }
 
 @mixin avatar {
