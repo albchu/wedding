@@ -1,0 +1,106 @@
+.tna-body {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.flight-Title {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 2fr;
+  grid-template-areas: "flightCircle tnaTitle";
+  grid-column-gap: 15px;
+  align-items: center;
+}
+
+.flight-Circle {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  grid-area: flightCircle;
+  background-image: url("../images/flight.png");
+  background-position: center;
+  background-size: 120%;
+}
+
+.tna-Title {
+  grid-area: tnaTitle;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(97, 97, 97);
+  font-size: 1.4em;
+}
+
+.tna-Text {
+  color: white;
+  text-shadow: 2px 2px 2px rgb(97, 97, 97);
+  font-size: 0.95em;
+  margin-left: 13px;
+  margin-right: 20px;
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.hotel-Title {
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 10px;
+  grid-template-columns: auto 2fr;
+  grid-template-areas: "hotelCircle tnaTitle";
+  grid-column-gap: 15px;
+  align-items: center;
+}
+
+.hotel-Circle {
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  grid-area: hotelCircle;
+  background-image: url("../images/hotel.png");
+  background-position: center;
+  background-size: 120%;
+}
+
+.tna-Link {
+  color: blue;
+  text-shadow: 2px 2px 2px rgb(97, 97, 97);
+  font-size: 1em;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tna-Link2 {
+  color: rgb(253, 253, 110);
+  text-shadow: 2px 2px 3px black;
+  font-size: 1em;
+}
+
+.sightsee-Title {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 2fr;
+  grid-template-areas: "sightseeCircle tnaTitle";
+  grid-column-gap: 15px;
+  margin-top: 28px;
+  align-items: center;
+}
+
+.sightsee-Circle {
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  grid-area: sightseeCircle;
+  background-image: url("../images/sightsee.png");
+  background-position: center;
+  background-size: 120%;
+}
+
+.tna-padding {
+  padding: 0.3em;
+}

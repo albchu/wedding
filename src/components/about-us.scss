@@ -1,0 +1,118 @@
+.aboutUs_container {
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 14px;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "padding padding padding"
+    "albertAvatar heart vickyAvatar"
+    "albertName . vickyName"
+    "albertDescription . vickyDescription";
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+@mixin avatar {
+  background-size: cover;
+}
+
+@mixin textLeft {
+  padding-left: 14px;
+}
+
+@mixin description {
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  line-height: 1.1em;
+  color: rgb(124, 124, 124);
+  p:nth-child(2) {
+    margin: 0px;
+    font-style: italic;
+  }
+}
+
+@mixin name {
+  font-family: "Roboto Slab", serif;
+  // white-space: nowrap;
+  font-size: 2em;
+  line-height: 1.2em;
+  align-self: end;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  color: adjust-color(
+    $color: #545970,
+    $hue: 0,
+    $saturation: 10%,
+    $lightness: 10%,
+    $alpha: 1
+  );
+}
+
+.padding {
+  grid-area: padding;
+  padding-top: 20px;
+}
+
+.albertAvatar {
+  @include avatar;
+  width: 145px;
+  height: 213px;
+  grid-area: albertAvatar;
+  // justify-self: end;
+  background-image: url("../images/albert_avatar.png");
+}
+
+.vickyAvatar {
+  @include avatar;
+  // margin-top: 10px;
+  // margin-left: 45px;
+  width: 160px;
+  height: 214px;
+  grid-area: vickyAvatar;
+  background-image: url("../images/vicky_avatar.png");
+}
+
+.albertName {
+  // @include textLeft;
+  @include name;
+  text-align: center;
+  grid-area: albertName;
+}
+
+.albertDescription {
+  @include description;
+  // @include textLeft;
+  text-align: center;
+  grid-area: albertDescription;
+}
+
+.vickyName {
+  @include name;
+  text-align: center;
+  grid-area: vickyName;
+  color: #6e527a;
+  // margin-right: -35px;
+}
+
+.vickyDescription {
+  @include description;
+  text-align: center;
+  grid-area: vickyDescription;
+  // margin-right: -35px;
+}
+
+.heart {
+  background-image: url("../images/heart.png");
+  grid-area: heart;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 45px;
+  background-position: center;
+}

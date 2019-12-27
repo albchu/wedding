@@ -1,0 +1,15 @@
+.announcement {
+  background-image: url("../images/hands.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-position: center top;
+
+  .title {
+    padding-top: 150px;
+  }
+}

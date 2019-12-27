@@ -1,0 +1,21 @@
+.rsvp {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center top;
+  background-image: url("../images/early_hug.jpg");
+  height: 100vh;
+  position: relative;
+}
+
+.rsvp_contents {
+  padding: 2vh 6vw;
+  z-index: 5;
+}
+
+.rsvp_centered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

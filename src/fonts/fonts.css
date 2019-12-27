@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato|Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
+
+@font-face {
+  font-family: "Popsie";
+  src: url("../fonts/Popsies.ttf");
+  src: url("../fonts/Popsies.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Popsies.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Popsies.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Popsies.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Popsies.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Moon 2.0 Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Moon 2.0 Regular"),
+    url("../fonts/Moon2.0-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Moon 2.0 Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Moon 2.0 Bold"), url("../fonts/Moon2.0-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Moon 2.0 Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Moon 2.0 Light"),
+    url("../fonts/Moon2.0-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Giddyup Std Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Giddyup Std Regular"),
+    url("../fonts/GiddyupStd.woff") format("woff"),
+    url("../fonts/GiddyupStd.otf") format("otf");
+}

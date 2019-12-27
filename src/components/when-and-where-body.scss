@@ -1,0 +1,88 @@
+.whenWhereBody {
+  background-color: white;
+  color: #545970;
+  padding: 4vh 10px 4vh 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.emoji {
+  padding: 0.5em;
+}
+
+.map {
+  background-image: url("../images/map_circle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #f5faff;
+  margin: 10px;
+  box-shadow: 3px 3px rgba(231, 229, 229, 0.5);
+}
+
+.circleButtonRow {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 2fr;
+  grid-template-areas: "circle row";
+  grid-column-gap: 15px;
+  align-items: center;
+
+  // Hotel name
+  p:first-child {
+    font-size: 1.3em;
+    font-weight: 800;
+  }
+
+  // Address
+  p:nth-child(2) {
+    font-size: 1em;
+    font-style: italic;
+  }
+
+  .circle {
+    grid-area: circle;
+  }
+  .row {
+    grid-area: row;
+  }
+}
+
+.address {
+  font-size: 1em;
+  p {
+    line-height: 0.2em;
+  }
+}
+
+.save_date {
+  font-size: 1em;
+  p {
+    line-height: 0.2em;
+  }
+}
+
+.date {
+  height: 100%;
+  background-image: url("../images/cal_25_v1.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.schedule_title {
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  font-size: 1.3em;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.schedule {
+  padding-left: 2em;
+  font-size: 1em;
+}

@@ -1,0 +1,19 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$bg-color: #e4e4e4;
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $bg-color;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(100vw, 1400px);
+  grid-template-rows: 96vh repeat(10, auto);
+  justify-content: center;
+  align-items: center;
+}

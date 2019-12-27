@@ -1,0 +1,11 @@
+.treeDeck_container {
+}
+
+.treeDeck_card {
+  transition: all 0.2s ease-in-out;
+}
+
+.fadeLeft {
+  transform: scale(0.8) translateY(-8vh);
+  opacity: 0;
+}
