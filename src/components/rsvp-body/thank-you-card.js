@@ -3,14 +3,6 @@ import RSVPFormHeader from "./rsvp-form-header";
 import capitalize from "lodash/capitalize";
 import map from "lodash/map";
 import random from "lodash/random";
-
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
@@ -60,27 +52,6 @@ export const ThankYouCard = ({ form }) => {
         directly or through email at albertchu539@gmail.com or
         vickywklao@gmail.com
       </Typography>
-      <br />
-      <TableContainer component={Paper} style={{ marginLeft: -10 }}>
-        <Table aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Key</TableCell>
-              <TableCell>Value</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {map(form, (value, key) => (
-              <TableRow key={key}>
-                <TableCell component="th" scope="row">
-                  {key}
-                </TableCell>
-                <TableCell>{value}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
     </div>
   );
 };
