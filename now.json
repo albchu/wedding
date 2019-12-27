@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "wedding",
-  "alias": ["ilaochu.ca"],
   "env": {
     "CLIENT_EMAIL": "@client-email",
     "PRIVATE_KEY": "@private-key"
