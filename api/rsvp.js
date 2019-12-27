@@ -17,7 +17,7 @@ const appendGoogleSheet = async ({
   const jwt = new google.auth.JWT(
     process.env.CLIENT_EMAIL,
     null,
-    process.env.PRIVATE_KEY,
+    JSON.parse(`"${process.env.PRIVATE_KEY}"`),
     [scope]
   );
 
@@ -52,8 +52,6 @@ const appendGoogleSheet = async ({
 export default async (req, res) => {
   if (req.method !== "POST") res.status(404).send("Only accept POST requests");
 
-  console.log(Buffer.from(PRIVATE_KEY_BASE64, "base64").toString());
-
   const response = await appendGoogleSheet(req.body);
 
   if (response.status === 200) {
@@ -61,5 +59,4 @@ export default async (req, res) => {
   } else {
     res.status(404).send(response.data);
   }
-  // res.status(200).send(process.env.PRIVATE_KEY);
 };
