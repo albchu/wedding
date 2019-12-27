@@ -1,17 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import RSVPFormHeader from "./rsvp-form-header";
 import capitalize from "lodash/capitalize";
+import { usePostRsvp } from "./use-post-rsvp";
 
 export const NotAttendingCard = ({ form }) => {
-  useEffect(() => {
-    fetch("/api/rsvp", {
-      method: "post",
-      body: JSON.stringify(form),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  }, [form]);
+  usePostRsvp(form);
 
   return (
     <>

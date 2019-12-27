@@ -5,6 +5,7 @@ import map from "lodash/map";
 import random from "lodash/random";
 import { Typography } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
+import { usePostRsvp } from "./use-post-rsvp";
 
 const INTRO_MESSAGES = guestName => [
   `Fantastic! You're confirmed ${guestName}. Thanks for RSVPing.`,
@@ -30,15 +31,8 @@ const getThanks = formPlusOneName => {
 };
 
 export const ThankYouCard = ({ form }) => {
-  useEffect(() => {
-    fetch("/api/rsvp", {
-      method: "post",
-      body: JSON.stringify(form),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  }, [form]);
+  usePostRsvp(form);
+
   const classes = useCardStyles();
 
   return (

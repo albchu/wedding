@@ -35,13 +35,14 @@ const appendGoogleSheet = async ({
     requestBody: {
       values: [
         [
+          new Date().toISOString(),
           name,
           email,
           attending,
           entree,
           plusOne,
-          plusOneEntree,
           plusOneName,
+          plusOneEntree,
           dietaryRestrictions,
         ],
       ],
