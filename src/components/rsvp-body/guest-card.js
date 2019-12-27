@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import RSVPFormHeader from "./rsvp-form-header";
-import { Button, RadioGroup, Radio, FormControlLabel } from "@material-ui/core";
+import {
+  Button,
+  RadioGroup,
+  Radio,
+  FormControlLabel,
+  Fade,
+} from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
 export const GuestCard = ({ setNextCard, updateForm, previousId, form }) => {
@@ -71,13 +77,15 @@ export const GuestCard = ({ setNextCard, updateForm, previousId, form }) => {
         Previous
       </Button>
 
-      <Button
-        disabled={!entree || !radioValue}
-        onClick={handleNextAction}
-        className={classes.actionButton}
-      >
-        Next
-      </Button>
+      <Fade in={entree && radioValue}>
+        <Button
+          disabled={!entree || !radioValue}
+          onClick={handleNextAction}
+          className={classes.actionButton}
+        >
+          Next
+        </Button>
+      </Fade>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import {
   Radio,
   FormControlLabel,
   TextField,
+  Fade,
 } from "@material-ui/core";
 import RSVPFormHeader from "./rsvp-form-header";
 import { useCardStyles } from "./use-card-styles";
@@ -77,17 +78,19 @@ export const AttendingCard = ({ setNextCard, updateForm, form }) => {
           label="Can't make it out"
         />
       </RadioGroup>
-      <Button
-        disabled={!name || !radioValue}
-        onClick={() =>
-          handleNextAction(
-            radioValue === "no" ? "NotAttendingCard" : "GuestCard"
-          )
-        }
-        className={classes.actionButton}
-      >
-        {radioValue === "no" ? "Submit" : "Next"}
-      </Button>
+      <Fade in={name && radioValue}>
+        <Button
+          disabled={!name || !radioValue}
+          onClick={() =>
+            handleNextAction(
+              radioValue === "no" ? "NotAttendingCard" : "GuestCard"
+            )
+          }
+          className={classes.actionButton}
+        >
+          {radioValue === "no" ? "Submit" : "Next"}
+        </Button>
+      </Fade>
     </div>
   );
 };

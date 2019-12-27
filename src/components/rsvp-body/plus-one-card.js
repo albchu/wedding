@@ -6,6 +6,7 @@ import {
   Radio,
   FormControlLabel,
   TextField,
+  Fade,
 } from "@material-ui/core";
 import { useCardStyles } from "./use-card-styles";
 
@@ -70,13 +71,15 @@ export const PlusOneCard = ({ setNextCard, updateForm, previousId, form }) => {
         Previous
       </Button>
 
-      <Button
-        disabled={!name || !entree}
-        onClick={handleNextAction}
-        className={classes.actionButton}
-      >
-        Next
-      </Button>
+      <Fade in={name && entree}>
+        <Button
+          disabled={!name || !entree}
+          onClick={handleNextAction}
+          className={classes.actionButton}
+        >
+          Next
+        </Button>
+      </Fade>
     </div>
   );
 };
