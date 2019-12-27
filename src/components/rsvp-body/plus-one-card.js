@@ -71,7 +71,7 @@ export const PlusOneCard = ({ setNextCard, updateForm, previousId, form }) => {
         Previous
       </Button>
 
-      <Fade in={name && entree}>
+      <Fade in={!!name && !!entree}>
         <Button
           disabled={!name || !entree}
           onClick={handleNextAction}

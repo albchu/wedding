@@ -78,7 +78,7 @@ export const AttendingCard = ({ setNextCard, updateForm, form }) => {
           label="Can't make it out"
         />
       </RadioGroup>
-      <Fade in={name && radioValue}>
+      <Fade in={!!name && !!radioValue}>
         <Button
           disabled={!name || !radioValue}
           onClick={() =>

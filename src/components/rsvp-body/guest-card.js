@@ -77,7 +77,7 @@ export const GuestCard = ({ setNextCard, updateForm, previousId, form }) => {
         Previous
       </Button>
 
-      <Fade in={entree && radioValue}>
+      <Fade in={!!entree && !!radioValue}>
         <Button
           disabled={!entree || !radioValue}
           onClick={handleNextAction}
