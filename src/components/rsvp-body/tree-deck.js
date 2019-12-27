@@ -1,4 +1,4 @@
-import React, { Children, useEffect, useState, cloneElement } from "react";
+import React, { Children, useState, cloneElement } from "react";
 import "./tree-deck.scss";
 
 /**

@@ -1,7 +1,6 @@
-import React from "react"
-import SectionTitle from "./section-title"
-import "./menu.scss"
-import Ampersand from "./ampersand";
+import React from "react";
+import SectionTitle from "./section-title";
+import "./menu.scss";
 
 const Menu = () => {
   return (
@@ -10,7 +9,7 @@ const Menu = () => {
         <SectionTitle title="Menu" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

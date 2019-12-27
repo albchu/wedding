@@ -9,7 +9,7 @@ import { RestrictionsCard } from "./restrictions-card";
 import { ThankYouCard } from "./thank-you-card";
 import { PasswordCard } from "./password-card";
 
-const RSVPBody = ({}) => {
+const RSVPBody = () => {
   const { form, updateForm } = useRSVPForm();
 
   return (
