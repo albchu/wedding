@@ -1,6 +1,6 @@
-import React from "react"
-import Ampersand from "./ampersand"
-import "./logo.scss"
+import React from "react";
+import Ampersand from "./ampersand";
+import "./logo.scss";
 
 const Logo = ({ color }) => {
   return (
@@ -15,7 +15,7 @@ const Logo = ({ color }) => {
         A
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

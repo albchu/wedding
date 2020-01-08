@@ -12,3 +12,9 @@ $font-stack: "Moon 2.0 Light";
     padding-top: 0.2em;
   }
 }
+
+@media only screen and (min-width: 650px) {
+  .logo__container {
+    font-size: 8em;
+  }
+}
