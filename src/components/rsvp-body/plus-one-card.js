@@ -65,6 +65,12 @@ export const PlusOneCard = ({ setNextCard, updateForm, previousId, form }) => {
           control={<Radio />}
           label="Salmon"
         />
+        <FormControlLabel
+          className={classes.text}
+          value="veggie"
+          control={<Radio />}
+          label="Vegetarian"
+        />
       </RadioGroup>
 
       <Button onClick={handlePreviousAction} className={classes.prevButton}>
